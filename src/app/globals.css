@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Hallmark modern-minimal / editorial palette (Atmospheric/Dark theme) */
+  --color-brand-50: oklch(0.95 0.01 250);
+  --color-brand-100: oklch(0.9 0.02 250);
+  --color-brand-200: oklch(0.8 0.04 250);
+  --color-brand-300: oklch(0.7 0.06 250);
+  --color-brand-400: oklch(0.6 0.08 250);
+  --color-brand-500: oklch(0.5 0.1 250);
+  --color-brand-600: oklch(0.4 0.1 250);
+  --color-brand-700: oklch(0.3 0.08 250);
+  --color-brand-800: oklch(0.2 0.06 250);
+  --color-brand-900: oklch(0.1 0.02 250);
+  
+  --color-background: var(--color-brand-900);
+  --color-foreground: var(--color-brand-50);
+  
+  --color-muted: var(--color-brand-800);
+  --color-muted-foreground: var(--color-brand-400);
+  
+  --color-border: var(--color-brand-800);
+  --color-input: var(--color-brand-800);
+}
+
+@layer base {
+  :root {
+    --background: oklch(0.1 0.02 250); /* Dark elegant slate */
+    --foreground: oklch(0.98 0 0); /* Pure white text */
+    --border: oklch(0.2 0.05 250);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-inter), sans-serif;
+    /* Hallmark rules: tight tracking, premium proportions */
+    letter-spacing: -0.01em; 
+    @apply antialiased font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    /* Bold, tight line-height, Apple/Sony global website feel */
+    letter-spacing: -0.02em;
+    font-weight: 600;
+    line-height: 1.1;
+  }
+
+  /* Utility for Apple-like Glassmorphism */
+  .glass-nav {
+    background: color-mix(in srgb, var(--background) 70%, transparent);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid color-mix(in srgb, var(--foreground) 10%, transparent);
+  }
+}
