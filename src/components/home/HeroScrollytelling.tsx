@@ -121,8 +121,7 @@ export function HeroScrollytelling() {
           className="absolute inset-0 w-full h-full object-cover opacity-60"
         />
         
-        {/* Mobile gradient overlay (Top & Bottom for maximum contrast) */}
-        <div className="absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-black via-black/90 to-transparent md:hidden pointer-events-none" />
+        {/* Mobile gradient overlay (Bottom for maximum contrast) */}
         <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black via-black/70 to-transparent md:hidden pointer-events-none" />
         
         {/* Desktop gradient overlay (Right) */}
