@@ -121,16 +121,16 @@ export function HeroScrollytelling() {
           className="absolute inset-0 w-full h-full object-cover opacity-60"
         />
         
-        {/* Mobile gradient overlay (Bottom for maximum contrast) */}
-        <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black via-black/70 to-transparent md:hidden pointer-events-none" />
+        {/* Mobile gradient overlay (Full coverage for center text legibility) */}
+        <div className="absolute inset-0 bg-black/60 md:hidden pointer-events-none" />
         
         {/* Desktop gradient overlay (Right) */}
         <div className="absolute inset-y-0 right-0 w-full md:w-3/4 lg:w-2/3 bg-gradient-to-l from-black via-black/95 to-transparent hidden md:block pointer-events-none" />
         
         <div className="absolute inset-0 bg-black/20 pointer-events-none" />
 
-        {/* Narrative Container: Bottom centered on mobile, Right aligned on desktop */}
-        <div className="relative z-10 container mx-auto px-6 md:px-12 grid place-items-center content-end pb-32 md:pb-0 md:place-items-end md:content-center h-full text-center md:text-left">
+        {/* Narrative Container: Center aligned on mobile, Right aligned on desktop */}
+        <div className="relative z-10 container mx-auto px-6 md:px-12 grid place-items-center content-center md:place-items-end h-full text-center md:text-left">
           
           {/* Phase 1: The Vision */}
           <motion.div style={{ opacity: t1, y: y1, display: display1 }} className="col-start-1 row-start-1 w-full max-w-xl pointer-events-none">
