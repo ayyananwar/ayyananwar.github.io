@@ -33,15 +33,15 @@ export function EmergencyScrollytelling() {
         
         {/* Background Images */}
         <motion.div style={{ opacity: img1Opacity }} className="absolute inset-0">
-          <Image src="/lifeline_1.png" alt="Accessibility" fill className="object-cover grayscale opacity-40" />
+          <Image src="/lifeline_1.png" alt="Accessibility" fill className="object-cover opacity-40" />
         </motion.div>
         
         <motion.div style={{ opacity: img2Opacity }} className="absolute inset-0">
-          <Image src="/lifeline_2.png" alt="Emergency Power" fill className="object-cover grayscale opacity-40" />
+          <Image src="/lifeline_2.png" alt="Emergency Power" fill className="object-cover opacity-40" />
         </motion.div>
 
         <motion.div style={{ opacity: img3Opacity }} className="absolute inset-0">
-          <Image src="/lifeline_3.png" alt="Safety Assurance" fill className="object-cover grayscale opacity-40" />
+          <Image src="/lifeline_3.png" alt="Safety Assurance" fill className="object-cover opacity-40" />
         </motion.div>
         
         {/* Cinematic Vignette */}

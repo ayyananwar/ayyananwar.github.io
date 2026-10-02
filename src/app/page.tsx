@@ -20,7 +20,7 @@ export default function Home() {
                 src="/luxury_elevator.jpg" 
                 alt="Engineering Philosophy" 
                 fill 
-                className="object-cover grayscale group-hover:scale-105 transition-transform duration-1000"
+                className="object-cover group-hover:scale-105 transition-transform duration-1000"
               />
             </div>
             
@@ -59,7 +59,7 @@ export default function Home() {
             
             <div className="group">
               <div className="relative h-48 md:h-64 w-full mb-6 overflow-hidden border border-white/10">
-                <Image src="/luxury_elevator.jpg" alt="Home Elevators" fill className="object-cover grayscale opacity-50 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-700" />
+                <Image src="/luxury_elevator.jpg" alt="Home Elevators" fill className="object-cover opacity-50 group-hover:opacity-100 transition-all duration-700" />
               </div>
               <h4 className="text-2xl font-bold tracking-tight mb-4">Home Elevators</h4>
               <p className="text-white/50 leading-relaxed font-medium mb-8">
@@ -72,7 +72,7 @@ export default function Home() {
 
             <div className="group">
               <div className="relative h-48 md:h-64 w-full mb-6 overflow-hidden border border-white/10">
-                <Image src="/commercial_elevator.jpg" alt="Commercial Elevators" fill className="object-cover grayscale opacity-50 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-700" />
+                <Image src="/commercial_elevator.jpg" alt="Commercial Elevators" fill className="object-cover opacity-50 group-hover:opacity-100 transition-all duration-700" />
               </div>
               <h4 className="text-2xl font-bold tracking-tight mb-4">Commercial Elevators</h4>
               <p className="text-white/50 leading-relaxed font-medium mb-8">
@@ -85,7 +85,7 @@ export default function Home() {
 
             <div className="group">
               <div className="relative h-48 md:h-64 w-full mb-6 overflow-hidden border border-white/10">
-                <Image src="/freight_elevator.jpg" alt="Freight Elevators" fill className="object-cover grayscale opacity-50 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-700" />
+                <Image src="/freight_elevator.jpg" alt="Freight Elevators" fill className="object-cover opacity-50 group-hover:opacity-100 transition-all duration-700" />
               </div>
               <h4 className="text-2xl font-bold tracking-tight mb-4">Heavy-Duty & Parking</h4>
               <p className="text-white/50 leading-relaxed font-medium mb-8">
@@ -117,14 +117,14 @@ export default function Home() {
                 </p>
               </div>
               <div className="order-1 md:order-2 relative h-[300px] md:h-[400px] w-full border border-white/10 group overflow-hidden bg-neutral-900">
-                <Image src="/journey_1.png" alt="Consultation" fill className="object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000" />
+                <Image src="/journey_1.png" alt="Consultation" fill className="object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000" />
               </div>
             </div>
 
             {/* Step 2 */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div className="relative h-[300px] md:h-[400px] w-full border border-white/10 group overflow-hidden bg-neutral-900">
-                <Image src="/journey_2.png" alt="Manufacturing" fill className="object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000" />
+                <Image src="/journey_2.png" alt="Manufacturing" fill className="object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000" />
               </div>
               <div className="flex flex-col justify-center md:pl-12">
                 <span className="text-6xl font-bold text-white/10 mb-4 block">02.</span>
@@ -145,7 +145,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="order-1 md:order-2 relative h-[300px] md:h-[400px] w-full border border-white/10 group overflow-hidden bg-neutral-900">
-                <Image src="/journey_3.png" alt="Installation" fill className="object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000" />
+                <Image src="/journey_3.png" alt="Installation" fill className="object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000" />
               </div>
             </div>
 

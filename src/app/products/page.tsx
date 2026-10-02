@@ -101,7 +101,7 @@ export default function ProductsPage() {
                 src="/luxury_elevator.jpg" 
                 alt="Globus Hydro-Electric Elevator" 
                 fill 
-                className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                className="object-cover transition-all duration-700"
               />
             </div>
           </div>
@@ -144,7 +144,7 @@ export default function ProductsPage() {
                 src="/commercial_elevator.jpg" 
                 alt="Commercial High-Speed Elevator" 
                 fill 
-                className="object-cover grayscale hover:grayscale-0 transition-all duration-700 opacity-60 group-hover:opacity-100"
+                className="object-cover transition-all duration-700 opacity-60 group-hover:opacity-100"
               />
               <div className="absolute inset-0 bg-black/50 p-8 flex flex-col justify-end pointer-events-none">
                 <h4 className="text-4xl font-bold tracking-tighter mb-4 text-white">MRL Technology</h4>
@@ -231,7 +231,7 @@ export default function ProductsPage() {
                   src="/freight_elevator.jpg" 
                   alt="Heavy Duty Freight Elevator" 
                   fill 
-                  className="object-cover grayscale"
+                  className="object-cover"
                 />
               </div>
               <div className="p-8 md:p-12">
