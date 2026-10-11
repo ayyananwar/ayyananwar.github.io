@@ -6,45 +6,91 @@ interface ContactFormProps {
   buttonText?: string;
   onSuccessCallback?: () => void;
   idPrefix?: string; // To prevent ID collisions if multiple forms are on one page
+  source?: string; // Identify source (e.g. "Brochure: Freight Elevators", "Main Consultation")
 }
 
-export function ContactForm({ buttonText = "Submit Inquiry", onSuccessCallback, idPrefix = "contact" }: ContactFormProps) {
-  const [formStatus, setFormStatus] = useState<"idle" | "error" | "success">("idle");
+export function ContactForm({
+  buttonText = "Submit Inquiry",
+  onSuccessCallback,
+  idPrefix = "contact",
+  source = "Consultation Form",
+}: ContactFormProps) {
+  const [formStatus, setFormStatus] = useState<"idle" | "loading" | "error" | "success">("idle");
+  const [errorMessage, setErrorMessage] = useState<string>("");
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    
-    // Simple custom validation
-    const formData = new FormData(e.currentTarget);
-    const firstName = formData.get("firstName");
-    const email = formData.get("email");
-    // Product Details is NO LONGER mandatory per user request
-    // Last name and phone are also often optional in these contexts, but let's just enforce First Name & Email as the bare minimum.
+
+    const formElement = e.currentTarget;
+    const formData = new FormData(formElement);
+    const firstName = formData.get("firstName")?.toString().trim();
+    const email = formData.get("email")?.toString().trim();
+    const honeypot = formData.get("_gotcha")?.toString().trim();
 
     if (!firstName || !email) {
       setFormStatus("error");
+      setErrorMessage("First name and email are required.");
       return;
     }
 
-    // Simulate success
-    setFormStatus("success");
-    e.currentTarget.reset();
-    
-    if (onSuccessCallback) {
-      onSuccessCallback();
+    setFormStatus("loading");
+    setErrorMessage("");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          firstName,
+          lastName: formData.get("lastName")?.toString().trim() || "",
+          email,
+          phone: formData.get("phone")?.toString().trim() || "",
+          details: formData.get("details")?.toString().trim() || "",
+          source,
+          honeypot: honeypot || "",
+        }),
+      });
+
+      const data = await response.json().catch(() => null);
+
+      if (!response.ok || !data?.success) {
+        throw new Error(data?.error || "Unable to send inquiry. Please try again.");
+      }
+
+      setFormStatus("success");
+      formElement.reset();
+
+      if (onSuccessCallback) {
+        onSuccessCallback();
+      }
+
+      setTimeout(() => {
+        setFormStatus("idle");
+      }, 6000);
+    } catch (error: any) {
+      console.error("Form submission failed:", error);
+      setFormStatus("error");
+      setErrorMessage(error.message || "An unexpected error occurred. Please try again.");
     }
-    
-    setTimeout(() => {
-      setFormStatus("idle");
-    }, 5000);
   };
 
   return (
     <form className="space-y-16 w-full" onSubmit={handleSubmit} noValidate>
+      {/* Bot spam honeypot field */}
+      <input
+        type="text"
+        name="_gotcha"
+        tabIndex={-1}
+        autoComplete="off"
+        className="hidden"
+        aria-hidden="true"
+      />
       
       {formStatus === "error" && (
         <div className="border border-red-500/50 bg-red-500/10 p-4 text-red-500 text-sm font-bold tracking-[0.1em] uppercase">
-          [ ERROR ] Please complete all required fields.
+          [ ERROR ] {errorMessage}
         </div>
       )}
       
@@ -128,10 +174,10 @@ export function ContactForm({ buttonText = "Submit Inquiry", onSuccessCallback, 
       <div className="pt-8">
         <button 
           type="submit"
-          disabled={formStatus === "success"}
+          disabled={formStatus === "success" || formStatus === "loading"}
           className="w-full md:w-auto px-12 bg-white text-black py-5 text-sm font-bold tracking-[0.2em] uppercase hover:bg-neutral-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          {formStatus === "success" ? "Submitted" : buttonText}
+          {formStatus === "success" ? "Submitted" : formStatus === "loading" ? "Sending..." : buttonText}
         </button>
       </div>
     </form>

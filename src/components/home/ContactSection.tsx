@@ -31,7 +31,8 @@ export function ContactSection() {
               <h4 className="text-sm font-semibold tracking-[0.1em] text-white/40 uppercase mb-2">Headquarters</h4>
               <p className="text-lg md:text-xl font-medium tracking-wide text-white/80">
                 Globus Elevators<br />
-                Noida, Uttar Pradesh, India
+                A/151, Sector 69, Noida<br />
+                Uttar Pradesh, India
               </p>
             </div>
             
@@ -53,17 +54,24 @@ export function ContactSection() {
               </div>
             </div>
 
-            <div className="pt-4 border-t border-white/10">
-              <h4 className="text-sm font-semibold tracking-[0.1em] text-white/40 uppercase mb-2">Direct Inquiry</h4>
-              <p className="text-lg md:text-xl font-medium tracking-wide mb-1">consult@globuselevators.com</p>
-              <p className="text-lg md:text-xl font-medium tracking-wide">+91 90317 61990</p>
+            <div className="pt-4 border-t border-white/10 space-y-1">
+              <h4 className="text-sm font-semibold tracking-[0.1em] text-white/40 uppercase mb-2">Direct Inquiries</h4>
+              <p className="text-lg md:text-xl font-medium tracking-wide">
+                <a href="mailto:info@globuselevators.com" className="hover:underline">info@globuselevators.com</a>
+              </p>
+              <p className="text-sm text-white/60 font-mono">
+                Direct: <a href="mailto:globuselevators.ge@gmail.com" className="hover:underline">globuselevators.ge@gmail.com</a>
+              </p>
+              <p className="text-lg md:text-xl font-medium tracking-wide pt-1">
+                <a href="tel:+919931334433" className="hover:underline">+91 99313 34433</a> / +91 90317 61990
+              </p>
             </div>
           </div>
         </div>
 
         {/* Right: Consultation Form */}
         <div className="flex flex-col justify-center mt-16 lg:mt-0">
-          <ContactForm idPrefix="consult" buttonText="Submit Inquiry" />
+          <ContactForm idPrefix="consult" buttonText="Submit Inquiry" source="Architectural Consultation (Home)" />
         </div>
 
       </div>

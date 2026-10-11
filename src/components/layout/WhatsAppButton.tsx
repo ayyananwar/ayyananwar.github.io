@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 export function WhatsAppButton() {
-  const whatsappNumber = "1234567890"; // Placeholder
+  const whatsappNumber = "919931334433";
 
   return (
     <motion.a

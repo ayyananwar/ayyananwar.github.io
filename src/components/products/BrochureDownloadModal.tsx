@@ -66,6 +66,7 @@ export function BrochureDownloadModal({ isOpen, onClose, pdfUrl, pdfTitle }: Bro
             <ContactForm 
               idPrefix={`download-${pdfUrl.replace(/[^a-zA-Z0-9]/g, '')}`} 
               buttonText="Download Brochure" 
+              source={`Brochure Download: ${pdfTitle}`}
               onSuccessCallback={triggerDownloadAndClose}
             />
           </motion.div>
