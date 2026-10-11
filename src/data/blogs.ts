@@ -17,9 +17,9 @@ export const blogPosts: BlogPost[] = [
     content: `
       <p class="mb-6">The modern residence is no longer constrained by the horizontal plane. As urban density increases and architectural ambition soars, the concept of vertical transit within private homes is undergoing a radical transformation.</p>
       <h2 class="text-3xl font-bold mt-12 mb-6">Beyond Mere Functionality</h2>
-      <p class="mb-6">Historically, home elevators were viewed purely as functional necessities or accessibility solutions. Today, they are statement pieces. At Globus Elevators, we treat the cabin not as a box that moves between floors, but as a dynamic room that transitions seamlessly through your home's architecture.</p>
+      <p class="mb-6">Historically, home elevators were viewed purely as functional necessities or accessibility solutions. Today, they are statement pieces. At Globus Elevators, we treat the cabin not as a box that moves between floors, but as a dynamic room that transitions precisely through your home's architecture.</p>
       <p class="mb-6">We are seeing a massive shift towards glass integration, minimalist frameworks, and smart-home connectivity where the elevator anticipates your arrival based on your daily routines.</p>
-      <blockquote class="border-l-2 border-white/20 pl-6 my-8 text-xl text-white/80 italic">"The ultimate luxury is seamless movement. When engineering is perfected, it becomes invisible."</blockquote>
+      <blockquote class="border-l-2 border-white/20 pl-6 my-8 text-xl text-white/80 italic">"The ultimate luxury is uncompromised mechanical reliability. When engineering is perfected, it becomes invisible."</blockquote>
       <h2 class="text-3xl font-bold mt-12 mb-6">The Integration of Space</h2>
       <p>Our recent installations feature structural glass shafts that allow natural light to cascade through multi-story properties, turning what was once a dark mechanical core into a luminous architectural spine. The future of vertical transit is not just about moving up and down; it is about how that movement enhances the space around it.</p>
     `,

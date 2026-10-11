@@ -64,7 +64,7 @@ export default function ServicesPage() {
       {/* Header */}
       <section className="container mx-auto px-6 md:px-12 max-w-7xl mb-20 md:mb-28">
         <header className="border-b border-white/10 pb-12">
-          <span className="text-xs md:text-sm font-semibold tracking-[0.3em] text-amber-400 uppercase block mb-4">
+          <span className="text-xs md:text-sm font-semibold tracking-[0.3em] text-white/50 uppercase block mb-4">
             Globus Elevators // Lifecycle Engineering
           </span>
           <h1 className="text-4xl md:text-6xl lg:text-8xl font-black tracking-tighter mb-6 leading-[1.05]">
@@ -96,7 +96,7 @@ export default function ServicesPage() {
                   <span className="text-5xl lg:text-7xl font-black text-neutral-200 block mb-4 leading-none">
                     {service.id}.
                   </span>
-                  <span className="text-xs font-mono font-bold tracking-widest text-amber-700 uppercase block mb-2">
+                  <span className="text-xs font-mono font-bold tracking-widest text-black uppercase block mb-2">
                     {service.category}
                   </span>
                   <h3 className="text-2xl md:text-4xl font-black tracking-tight mb-4 text-black">
@@ -114,7 +114,7 @@ export default function ServicesPage() {
                   <ul className="space-y-3">
                     {service.features.map((feat, idx) => (
                       <li key={idx} className="flex items-start text-sm text-neutral-800 font-medium">
-                        <span className="text-amber-600 font-bold mr-3 font-mono">0{idx + 1}</span>
+                        <span className="text-neutral-400 font-bold mr-3 font-mono">0{idx + 1}</span>
                         {feat}
                       </li>
                     ))}
@@ -130,7 +130,7 @@ export default function ServicesPage() {
       <section className="py-28 md:py-36 px-6 md:px-12 border-t border-white/10 bg-black text-white">
         <div className="container mx-auto max-w-7xl">
           <div className="border-b border-white/10 pb-8 mb-16">
-            <span className="text-xs font-mono font-bold tracking-widest text-amber-400 uppercase block mb-2">
+            <span className="text-xs font-mono font-bold tracking-widest text-white/50 uppercase block mb-2">
               PHASE 02 // LIFETIME RELIABILITY &amp; RETROFITS
             </span>
             <h2 className="text-3xl md:text-6xl font-black tracking-tight text-white">
@@ -145,7 +145,7 @@ export default function ServicesPage() {
                   <span className="text-5xl lg:text-7xl font-black text-neutral-800 block mb-4 leading-none">
                     {service.id}.
                   </span>
-                  <span className="text-xs font-mono font-bold tracking-widest text-amber-400 uppercase block mb-2">
+                  <span className="text-xs font-mono font-bold tracking-widest text-white/50 uppercase block mb-2">
                     {service.category}
                   </span>
                   <h3 className="text-2xl md:text-4xl font-black tracking-tight mb-4 text-white">
@@ -163,7 +163,7 @@ export default function ServicesPage() {
                   <ul className="space-y-3">
                     {service.features.map((feat, idx) => (
                       <li key={idx} className="flex items-start text-sm text-white/80 font-medium">
-                        <span className="text-amber-400 font-bold mr-3 font-mono">0{idx + 1}</span>
+                        <span className="text-white/40 font-bold mr-3 font-mono">0{idx + 1}</span>
                         {feat}
                       </li>
                     ))}

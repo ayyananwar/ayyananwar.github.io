@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white selection:bg-brand-500 selection:text-white overflow-x-clip">
+    <main className="min-h-screen bg-black text-white selection:bg-white selection:text-black overflow-x-clip">
       {/* Locked 3D Scrollytelling Hero */}
       <HeroScrollytelling />
 
@@ -44,13 +44,10 @@ export default function Home() {
                 className="object-cover group-hover:scale-105 transition-transform duration-1000"
                 priority
               />
-              {/* Warm Golden Architectural Lighting Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-amber-600/35 via-amber-500/15 to-transparent mix-blend-color pointer-events-none" />
-              <div className="absolute inset-0 bg-amber-500/10 mix-blend-overlay pointer-events-none" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
               
               <div className="absolute bottom-8 left-8 right-8 text-white">
-                <span className="text-xs font-mono tracking-widest uppercase text-amber-300 block mb-1">
+                <span className="text-xs font-mono tracking-widest uppercase text-white/60 block mb-1">
                   PRECISION MOTION &bull; RESIDENTIAL &bull; COMMERCIAL
                 </span>
                 <span className="text-xl font-bold tracking-tight">
@@ -121,9 +118,6 @@ export default function Home() {
                     fill 
                     className="object-cover group-hover:scale-105 transition-transform duration-700" 
                   />
-                  {/* Golden Amber Lighting Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-tr from-amber-600/35 via-amber-500/15 to-transparent mix-blend-color pointer-events-none" />
-                  <div className="absolute inset-0 bg-amber-500/10 mix-blend-overlay pointer-events-none" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
                 </div>
                 <span className="text-xs font-mono font-bold tracking-widest text-neutral-400 uppercase block mb-2">
@@ -133,13 +127,13 @@ export default function Home() {
                   Home Lifts
                 </h4>
                 <p className="text-neutral-700 text-base leading-relaxed font-medium mb-6">
-                  Space-efficient, quiet, and elegant hydraulic or traction lifts designed to fit seamlessly into any residential layout.
+                  Space-efficient, quiet, and elegant hydraulic or traction lifts engineered for custom residential layouts.
                 </p>
               </div>
               <div>
                 <Link 
                   href="/products#residential" 
-                  className="inline-block border-b-2 border-black pb-1 text-xs font-black tracking-[0.2em] uppercase hover:text-amber-600 transition-colors"
+                  className="inline-block border-b-2 border-black pb-1 text-xs font-black tracking-[0.2em] uppercase hover:opacity-60 transition-opacity"
                 >
                   Explore Home Lifts &rarr;
                 </Link>
@@ -156,9 +150,6 @@ export default function Home() {
                     fill 
                     className="object-cover group-hover:scale-105 transition-transform duration-700" 
                   />
-                  {/* Golden Amber Lighting Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-tr from-amber-600/35 via-amber-500/15 to-transparent mix-blend-color pointer-events-none" />
-                  <div className="absolute inset-0 bg-amber-500/10 mix-blend-overlay pointer-events-none" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
                 </div>
                 <span className="text-xs font-mono font-bold tracking-widest text-neutral-400 uppercase block mb-2">
@@ -174,7 +165,7 @@ export default function Home() {
               <div>
                 <Link 
                   href="/products#commercial" 
-                  className="inline-block border-b-2 border-black pb-1 text-xs font-black tracking-[0.2em] uppercase hover:text-amber-600 transition-colors"
+                  className="inline-block border-b-2 border-black pb-1 text-xs font-black tracking-[0.2em] uppercase hover:opacity-60 transition-opacity"
                 >
                   Commercial Blueprints &rarr;
                 </Link>
@@ -191,9 +182,6 @@ export default function Home() {
                     fill 
                     className="object-cover group-hover:scale-105 transition-transform duration-700" 
                   />
-                  {/* Golden Amber Lighting Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-tr from-amber-600/35 via-amber-500/15 to-transparent mix-blend-color pointer-events-none" />
-                  <div className="absolute inset-0 bg-amber-500/10 mix-blend-overlay pointer-events-none" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
                 </div>
                 <span className="text-xs font-mono font-bold tracking-widest text-neutral-400 uppercase block mb-2">
@@ -209,7 +197,7 @@ export default function Home() {
               <div>
                 <Link 
                   href="/products#industrial" 
-                  className="inline-block border-b-2 border-black pb-1 text-xs font-black tracking-[0.2em] uppercase hover:text-amber-600 transition-colors"
+                  className="inline-block border-b-2 border-black pb-1 text-xs font-black tracking-[0.2em] uppercase hover:opacity-60 transition-opacity"
                 >
                   Specialized Systems &rarr;
                 </Link>
@@ -225,7 +213,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-end justify-between border-b border-white/10 pb-12 mb-16 md:mb-24 gap-8">
             <div>
-              <span className="text-xs md:text-sm font-semibold tracking-[0.3em] text-amber-400 uppercase block mb-3">
+              <span className="text-xs md:text-sm font-semibold tracking-[0.3em] text-white/50 uppercase block mb-3">
                 04 // Technical Superiority
               </span>
               <h2 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.95]">
@@ -240,7 +228,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             
             <div className="border-t border-white/20 pt-8">
-              <span className="text-4xl font-black text-amber-400/40 mb-4 block font-mono">01.</span>
+              <span className="text-4xl font-black text-white/20 mb-4 block font-mono">01.</span>
               <h4 className="text-xl md:text-2xl font-bold tracking-tight mb-3 text-white">
                 Compact &amp; Flexible Design
               </h4>
@@ -250,7 +238,7 @@ export default function Home() {
             </div>
 
             <div className="border-t border-white/20 pt-8">
-              <span className="text-4xl font-black text-amber-400/40 mb-4 block font-mono">02.</span>
+              <span className="text-4xl font-black text-white/20 mb-4 block font-mono">02.</span>
               <h4 className="text-xl md:text-2xl font-bold tracking-tight mb-3 text-white">
                 Advanced Safety Standards
               </h4>
@@ -260,7 +248,7 @@ export default function Home() {
             </div>
 
             <div className="border-t border-white/20 pt-8">
-              <span className="text-4xl font-black text-amber-400/40 mb-4 block font-mono">03.</span>
+              <span className="text-4xl font-black text-white/20 mb-4 block font-mono">03.</span>
               <h4 className="text-xl md:text-2xl font-bold tracking-tight mb-3 text-white">
                 Energy Efficient
               </h4>
@@ -270,7 +258,7 @@ export default function Home() {
             </div>
 
             <div className="border-t border-white/20 pt-8">
-              <span className="text-4xl font-black text-amber-400/40 mb-4 block font-mono">04.</span>
+              <span className="text-4xl font-black text-white/20 mb-4 block font-mono">04.</span>
               <h4 className="text-xl md:text-2xl font-bold tracking-tight mb-3 text-white">
                 End-to-End Execution
               </h4>
@@ -313,7 +301,6 @@ export default function Home() {
               </div>
               <div className="order-1 md:order-2 relative h-[360px] lg:h-[480px] w-full overflow-hidden bg-neutral-900 group">
                 <Image src="/journey_1.png" alt="Consultation" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
-                <div className="absolute inset-0 bg-gradient-to-tr from-amber-600/30 via-amber-500/10 to-transparent mix-blend-color pointer-events-none" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
               </div>
             </div>
@@ -322,7 +309,6 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-center">
               <div className="relative h-[360px] lg:h-[480px] w-full overflow-hidden bg-neutral-900 group">
                 <Image src="/journey_2.png" alt="Engineering" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
-                <div className="absolute inset-0 bg-gradient-to-tr from-amber-600/30 via-amber-500/10 to-transparent mix-blend-color pointer-events-none" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
               </div>
               <div className="flex flex-col justify-center">
@@ -345,7 +331,6 @@ export default function Home() {
               </div>
               <div className="order-1 md:order-2 relative h-[360px] lg:h-[480px] w-full overflow-hidden bg-neutral-900 group">
                 <Image src="/journey_3.png" alt="Installation" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
-                <div className="absolute inset-0 bg-gradient-to-tr from-amber-600/30 via-amber-500/10 to-transparent mix-blend-color pointer-events-none" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
               </div>
             </div>
@@ -358,7 +343,7 @@ export default function Home() {
       <section className="relative z-20 py-28 md:py-40 px-6 md:px-12 lg:px-24 bg-black text-white border-t border-white/10">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
           <div className="max-w-2xl">
-            <span className="text-xs font-semibold tracking-[0.3em] text-amber-400 uppercase mb-4 block">
+            <span className="text-xs font-semibold tracking-[0.3em] text-white/50 uppercase mb-4 block">
               06 // Project Execution
             </span>
             <h3 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tighter mb-8 leading-[1.05]">
@@ -368,8 +353,8 @@ export default function Home() {
               Schedule a complimentary site survey, structural assessment, or receive an architectural estimate from our engineering department.
             </p>
             <div className="space-y-2 text-sm font-mono text-white/70">
-              <p>Corporate: <a href="mailto:info@globuselevators.com" className="text-white underline">info@globuselevators.com</a></p>
-              <p>Direct Inquiries: <a href="tel:+919931334433" className="text-white underline">+91 99313 34433</a> / +91 90317 61990</p>
+              <p>Corporate: <a href="mailto:info@globuselevators.com" className="text-white underline hover:text-white/70 transition-colors">info@globuselevators.com</a></p>
+              <p>Direct Inquiries: <a href="tel:+919931334433" className="text-white underline hover:text-white/70 transition-colors">+91 99313 34433</a> / +91 90317 61990</p>
               <p>Headquarters: A/151, Sector 69, Noida, Uttar Pradesh, India</p>
             </div>
           </div>

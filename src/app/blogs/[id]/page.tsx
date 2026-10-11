@@ -33,7 +33,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
 
         <header className="border-b border-white/10 pb-12">
           <div className="flex items-center space-x-3 mb-6">
-            <span className="text-xs font-mono font-bold tracking-widest uppercase text-amber-400">
+            <span className="text-xs font-mono font-bold tracking-widest uppercase text-white/40">
               {post.category}
             </span>
             <span className="text-white/30">&bull;</span>
@@ -71,9 +71,6 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
                 className="object-cover"
                 priority
               />
-              {/* Golden Lighting Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-amber-600/35 via-amber-500/15 to-transparent mix-blend-color pointer-events-none" />
-              <div className="absolute inset-0 bg-amber-500/10 mix-blend-overlay pointer-events-none" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
             </div>
           )}

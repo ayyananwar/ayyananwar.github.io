@@ -46,16 +46,13 @@ export default function AboutPage() {
               </p>
             </div>
             
-            <div className="lg:col-span-5 relative h-[420px] md:h-[520px] w-full border border-black/10 overflow-hidden bg-neutral-900 group">
+            <div className="lg:col-span-5 relative h-[420px] md:h-[520px] w-full overflow-hidden bg-neutral-900 group">
               <Image 
                 src="/luxury_elevator.jpg" 
                 alt="Globus Elevators Engineering Heritage" 
                 fill 
                 className="object-cover group-hover:scale-105 transition-transform duration-700" 
               />
-              {/* Warm Golden Architectural Lighting Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-amber-600/35 via-amber-500/15 to-transparent mix-blend-color pointer-events-none" />
-              <div className="absolute inset-0 bg-amber-500/10 mix-blend-overlay pointer-events-none" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
               <div className="absolute bottom-6 left-6 right-6 border-t border-white/20 pt-3">
                 <span className="text-xs font-mono tracking-widest text-white/80 uppercase">HANDS-ON PRECISION &bull; NOIDA HEADQUARTERS</span>
@@ -68,10 +65,10 @@ export default function AboutPage() {
       {/* Narrative Section 02: Mission & Vision (Dark Obsidian Section) */}
       <section className="py-28 md:py-36 px-6 md:px-12 border-t border-white/10 bg-black text-white">
         <div className="container mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20">
             
-            <div className="border border-white/10 p-10 md:p-14 bg-neutral-950">
-              <span className="text-xs font-mono font-bold tracking-widest text-amber-400 uppercase block mb-4">
+            <div className="border-t border-white/20 pt-8">
+              <span className="text-xs font-mono font-bold tracking-widest text-white/40 uppercase block mb-4">
                 02 // CORE PURPOSE
               </span>
               <h3 className="text-3xl md:text-4xl font-black tracking-tight mb-6 text-white">
@@ -85,8 +82,8 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div className="border border-white/10 p-10 md:p-14 bg-neutral-950">
-              <span className="text-xs font-mono font-bold tracking-widest text-amber-400 uppercase block mb-4">
+            <div className="border-t border-white/20 pt-8">
+              <span className="text-xs font-mono font-bold tracking-widest text-white/40 uppercase block mb-4">
                 03 // LONG-TERM ASPIRATION
               </span>
               <h3 className="text-3xl md:text-4xl font-black tracking-tight mb-6 text-white">

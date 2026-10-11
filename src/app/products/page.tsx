@@ -30,7 +30,7 @@ export default function ProductsPage() {
       {/* Header */}
       <section className="container mx-auto px-6 md:px-12 max-w-7xl mb-16 md:mb-24">
         <header className="border-b border-white/10 pb-12">
-          <span className="text-xs md:text-sm font-semibold tracking-[0.3em] text-amber-400 uppercase block mb-4">
+          <span className="text-xs md:text-sm font-semibold tracking-[0.3em] text-white/50 uppercase block mb-4">
             Globus Elevators // Systems Portfolio
           </span>
           <h1 className="text-4xl md:text-6xl lg:text-8xl font-black tracking-tighter mb-6 leading-[1.05]">
@@ -58,7 +58,7 @@ export default function ProductsPage() {
               </h2>
             </div>
             <p className="text-base text-neutral-700 max-w-md font-medium">
-              Space-efficient, quiet, and elegant hydraulic or traction lifts designed to fit seamlessly into any residential layout.
+              Space-efficient, quiet, and elegant hydraulic or traction lifts engineered for custom residential layouts.
             </p>
           </div>
           
@@ -91,12 +91,12 @@ export default function ProductsPage() {
               </div>
 
               <div className="mt-8 border-t border-black/15 pt-6">
-                <h4 className="text-xs font-bold uppercase tracking-widest text-amber-700 mb-3">Custom Architectural Finishes</h4>
+                <h4 className="text-xs font-bold uppercase tracking-widest text-black mb-3">Custom Architectural Finishes</h4>
                 <ul className="space-y-2 text-sm text-neutral-700 font-medium">
-                  <li className="flex items-center"><span className="text-amber-600 mr-3">&rarr;</span> Mirror-etched Stainless Steel &amp; Titanium Finishes</li>
-                  <li className="flex items-center"><span className="text-amber-600 mr-3">&rarr;</span> 360-Degree Panoramic Toughened Glass Walls</li>
-                  <li className="flex items-center"><span className="text-amber-600 mr-3">&rarr;</span> Anti-skid Italian Granite or Hardwood Flooring</li>
-                  <li className="flex items-center"><span className="text-amber-600 mr-3">&rarr;</span> Recessed Ambient Architectural Lighting</li>
+                  <li className="flex items-center"><span className="text-neutral-400 mr-3">&rarr;</span> Mirror-etched Stainless Steel &amp; Titanium Finishes</li>
+                  <li className="flex items-center"><span className="text-neutral-400 mr-3">&rarr;</span> 360-Degree Panoramic Toughened Glass Walls</li>
+                  <li className="flex items-center"><span className="text-neutral-400 mr-3">&rarr;</span> Anti-skid Italian Granite or Hardwood Flooring</li>
+                  <li className="flex items-center"><span className="text-neutral-400 mr-3">&rarr;</span> Recessed Ambient Architectural Lighting</li>
                 </ul>
               </div>
 
@@ -123,9 +123,6 @@ export default function ProductsPage() {
                 fill 
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
               />
-              {/* Golden Amber Lighting Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-amber-600/35 via-amber-500/15 to-transparent mix-blend-color pointer-events-none" />
-              <div className="absolute inset-0 bg-amber-500/10 mix-blend-overlay pointer-events-none" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
             </div>
           </div>
@@ -137,7 +134,7 @@ export default function ProductsPage() {
         <div className="container mx-auto max-w-7xl">
           <div className="flex flex-col md:flex-row md:items-end justify-between border-b border-white/10 pb-8 mb-16 gap-6">
             <div>
-              <span className="text-xs font-mono tracking-widest text-amber-400 uppercase block mb-2">
+              <span className="text-xs font-mono tracking-widest text-white/50 uppercase block mb-2">
                 SERIES 02 // HIGH-TRAFFIC INFRASTRUCTURE
               </span>
               <h2 className="text-3xl md:text-5xl font-black tracking-tight">
@@ -158,14 +155,11 @@ export default function ProductsPage() {
                 fill 
                 className="object-cover transition-all duration-700 group-hover:scale-105"
               />
-              {/* Golden Amber Lighting Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-amber-600/35 via-amber-500/15 to-transparent mix-blend-color pointer-events-none" />
-              <div className="absolute inset-0 bg-amber-500/10 mix-blend-overlay pointer-events-none" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
 
               <div className="absolute bottom-6 left-6 right-6 border-t border-white/20 pt-4 pointer-events-none">
                 <h4 className="text-2xl font-bold tracking-tight text-white mb-1">MRL Gearless Technology</h4>
-                <p className="text-xs font-mono tracking-widest uppercase text-amber-300">Machine-Room-Less Architecture &bull; 80% Energy Reduction</p>
+                <p className="text-xs font-mono tracking-widest uppercase text-white/60">Machine-Room-Less Architecture &bull; 80% Energy Reduction</p>
               </div>
             </div>
 
@@ -223,9 +217,9 @@ export default function ProductsPage() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start">
             
-            <div>
+            <div className="lg:col-span-6">
               <h3 className="text-3xl font-bold tracking-tight mb-4 text-black">Industrial Freight, Automotive &amp; Dumbwaiters</h3>
               <p className="text-base text-neutral-700 leading-relaxed font-medium mb-8">
                 Engineered with heavy-gauge structural steel frames, reinforced diamond-plate floors, and heavy-duty gates capable of sustaining extreme pallet truck and vehicular loads.
@@ -243,31 +237,28 @@ export default function ProductsPage() {
               </div>
             </div>
 
-            <div className="bg-neutral-50 border border-black/10 p-8 md:p-10">
-              <div className="relative h-[260px] w-full mb-6 overflow-hidden bg-neutral-900 group">
+            <div className="lg:col-span-6 border-t lg:border-t-0 lg:border-l border-black/15 pt-8 lg:pt-0 lg:pl-12">
+              <div className="relative h-[280px] w-full mb-8 overflow-hidden bg-neutral-900 group">
                 <Image 
                   src="/freight_elevator.jpg" 
                   alt="Industrial Automotive Freight Lift" 
                   fill 
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                {/* Golden Amber Lighting Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-amber-600/35 via-amber-500/15 to-transparent mix-blend-color pointer-events-none" />
-                <div className="absolute inset-0 bg-amber-500/10 mix-blend-overlay pointer-events-none" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
               </div>
-              <h4 className="text-xs font-bold tracking-[0.2em] text-amber-700 uppercase mb-4">Fail-Safe Industrial Safeguards</h4>
+              <h4 className="text-xs font-bold tracking-[0.2em] text-neutral-500 uppercase mb-4">Fail-Safe Industrial Safeguards</h4>
               <ul className="space-y-3 text-sm text-neutral-800 font-medium">
                 <li className="flex items-start">
-                  <span className="text-amber-600 mr-3 font-mono font-bold">01</span>
+                  <span className="text-neutral-400 mr-3 font-mono font-bold">01</span>
                   Automatic Rescue Device (ARD) battery descent during industrial grid failure.
                 </li>
                 <li className="flex items-start">
-                  <span className="text-amber-600 mr-3 font-mono font-bold">02</span>
+                  <span className="text-neutral-400 mr-3 font-mono font-bold">02</span>
                   Electronic load-weighing cells preventing motion on overload condition.
                 </li>
                 <li className="flex items-start">
-                  <span className="text-amber-600 mr-3 font-mono font-bold">03</span>
+                  <span className="text-neutral-400 mr-3 font-mono font-bold">03</span>
                   Instantaneous guide rail safety gear brakes for instantaneous mechanical arrest.
                 </li>
               </ul>

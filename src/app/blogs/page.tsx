@@ -9,7 +9,7 @@ export default function Blogs() {
       {/* Header */}
       <section className="container mx-auto px-6 md:px-12 max-w-7xl mb-20 md:mb-28">
         <header className="border-b border-white/10 pb-12">
-          <span className="text-xs md:text-sm font-semibold tracking-[0.3em] text-amber-400 uppercase block mb-4">
+          <span className="text-xs md:text-sm font-semibold tracking-[0.3em] text-white/40 uppercase block mb-4">
             Globus Elevators // Architectural Publications
           </span>
           <h1 className="text-4xl md:text-6xl lg:text-8xl font-black tracking-tighter mb-6 leading-[1.05]">
@@ -30,7 +30,7 @@ export default function Blogs() {
                 key={post.id} 
                 className="group relative flex flex-col h-full border-b border-black/10 pb-10"
               >
-                {/* Image Container with Golden Overlay */}
+                {/* Image Container with Natural Lighting */}
                 <div className="w-full aspect-[16/10] bg-neutral-900 border border-black/10 mb-6 overflow-hidden relative">
                   {post.imageUrl && (
                     <Image 
@@ -40,15 +40,12 @@ export default function Blogs() {
                       className="object-cover group-hover:scale-105 transition-transform duration-700"
                     />
                   )}
-                  {/* Golden Lighting Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-tr from-amber-600/35 via-amber-500/15 to-transparent mix-blend-color pointer-events-none" />
-                  <div className="absolute inset-0 bg-amber-500/10 mix-blend-overlay pointer-events-none" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
                 </div>
 
                 {/* Metadata */}
                 <div className="flex items-center space-x-3 mb-3">
-                  <span className="text-xs font-mono font-bold tracking-widest uppercase text-amber-700">
+                  <span className="text-xs font-mono font-bold tracking-widest uppercase text-black">
                     {post.category}
                   </span>
                   <span className="text-neutral-300">&bull;</span>

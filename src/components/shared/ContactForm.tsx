@@ -123,7 +123,7 @@ export function ContactForm({
             htmlFor={`${idPrefix}-firstName`} 
             className={`block text-[11px] font-bold tracking-[0.15em] uppercase ${labelColor} mb-1`}
           >
-            First Name <span className="text-amber-500">*</span>
+            First Name <span className="opacity-60">*</span>
           </label>
           <input 
             type="text" 
@@ -159,7 +159,7 @@ export function ContactForm({
             htmlFor={`${idPrefix}-email`} 
             className={`block text-[11px] font-bold tracking-[0.15em] uppercase ${labelColor} mb-1`}
           >
-            Email Address <span className="text-amber-500">*</span>
+            Email Address <span className="opacity-60">*</span>
           </label>
           <input 
             type="email" 

@@ -53,7 +53,7 @@ export function BrochureDownloadModal({ isOpen, onClose, pdfUrl, pdfTitle }: Bro
             </button>
 
             <div className="mb-6 border-b border-white/10 pb-5 pr-8">
-              <span className="text-[10px] sm:text-xs font-mono tracking-widest text-amber-400 uppercase mb-1.5 block">
+              <span className="text-[10px] sm:text-xs font-mono tracking-widest text-white/40 uppercase mb-1.5 block">
                 Technical Specifications // Instant Access
               </span>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-black tracking-tight mb-2 text-white leading-tight">

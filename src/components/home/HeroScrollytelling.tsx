@@ -132,14 +132,14 @@ export function HeroScrollytelling() {
         {/* Narrative Container: Center aligned on mobile, Right aligned on desktop */}
         <div className="relative z-10 container mx-auto px-6 md:px-12 grid place-items-center content-center md:place-items-end h-full text-center md:text-left">
           
-          {/* Phase 1: The Vision */}
+          {/* Phase 1: Architectural Integration */}
           <motion.div style={{ opacity: t1, y: y1, display: display1 }} className="col-start-1 row-start-1 w-full max-w-xl pointer-events-none">
-            <span className="text-[10px] md:text-sm font-bold tracking-[0.3em] text-white/50 uppercase mb-4 block">01 // The Vision</span>
+            <span className="text-[10px] md:text-sm font-bold tracking-[0.3em] text-white/50 uppercase mb-4 block">01 // Architectural Integration</span>
             <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold tracking-tighter text-white mb-4 leading-tight">
               A Home That <br className="hidden sm:block" />Flows Perfectly.
             </h2>
             <p className="text-base md:text-xl text-white/80 font-medium leading-relaxed">
-              An elevator shouldn't disrupt your home's design—it should enhance it. We build beautiful elevators that fit seamlessly.
+              An elevator shouldn&apos;t disrupt your home&apos;s structural design. We engineer precision motion calibrated for your blueprints.
             </p>
           </motion.div>
 

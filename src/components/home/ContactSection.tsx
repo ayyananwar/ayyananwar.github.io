@@ -12,7 +12,7 @@ export function ContactSection() {
         {/* Left: Contact Info & Typography */}
         <div className="flex flex-col justify-between">
           <div>
-            <span className="text-xs md:text-sm font-semibold tracking-[0.3em] text-amber-400 uppercase mb-4 block">
+            <span className="text-xs md:text-sm font-semibold tracking-[0.3em] text-white/40 uppercase mb-4 block">
               Direct Engineering Consultation
             </span>
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tighter mb-8 leading-[1.05]">
@@ -40,15 +40,15 @@ export function ContactSection() {
               <h4 className="text-xs font-mono font-bold tracking-widest text-white/60 uppercase mb-4">Pan-India Coverage</h4>
               <div className="space-y-4">
                 <div>
-                  <span className="text-xs font-mono font-bold tracking-[0.1em] text-amber-400 uppercase block mb-1">North &amp; NCR</span>
+                  <span className="text-xs font-mono font-bold tracking-[0.1em] text-white/40 uppercase block mb-1">North &amp; NCR</span>
                   <p className="text-base font-medium text-white/90">Delhi NCR, UP, Punjab, Haryana</p>
                 </div>
                 <div>
-                  <span className="text-xs font-mono font-bold tracking-[0.1em] text-amber-400 uppercase block mb-1">Central &amp; East</span>
+                  <span className="text-xs font-mono font-bold tracking-[0.1em] text-white/40 uppercase block mb-1">Central &amp; East</span>
                   <p className="text-base font-medium text-white/90">MP (Bhopal), Chhattisgarh, WB (Kolkata), Bihar, Jharkhand (Ranchi), Odisha, Assam</p>
                 </div>
                 <div>
-                  <span className="text-xs font-mono font-bold tracking-[0.1em] text-amber-400 uppercase block mb-1">South &amp; West</span>
+                  <span className="text-xs font-mono font-bold tracking-[0.1em] text-white/40 uppercase block mb-1">South &amp; West</span>
                   <p className="text-base font-medium text-white/90">Karnataka, Kerala, Maharashtra (Pusad)</p>
                 </div>
               </div>
@@ -57,13 +57,13 @@ export function ContactSection() {
             <div className="pt-4 border-t border-white/10 space-y-2">
               <h4 className="text-xs font-mono font-bold tracking-widest text-white/60 uppercase mb-2">Direct Inquiries</h4>
               <p className="text-lg md:text-xl font-medium tracking-wide">
-                <a href="mailto:info@globuselevators.com" className="hover:text-amber-400 transition-colors">info@globuselevators.com</a>
+                <a href="mailto:info@globuselevators.com" className="hover:text-white/60 transition-colors">info@globuselevators.com</a>
               </p>
               <p className="text-sm text-white/60 font-mono">
                 Direct: <a href="mailto:globuselevators.ge@gmail.com" className="hover:underline">globuselevators.ge@gmail.com</a>
               </p>
               <p className="text-lg md:text-xl font-medium tracking-wide pt-1">
-                <a href="tel:+919931334433" className="hover:text-amber-400 transition-colors">+91 99313 34433</a> / +91 90317 61990
+                <a href="tel:+919931334433" className="hover:text-white/60 transition-colors">+91 99313 34433</a> / +91 90317 61990
               </p>
             </div>
           </div>

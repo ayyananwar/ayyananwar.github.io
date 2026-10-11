@@ -27,8 +27,8 @@ export function Footer() {
         {/* Legal & Social */}
         <div className="flex flex-col space-y-3">
           <h4 className="text-xs font-mono font-bold tracking-[0.2em] text-white/60 uppercase mb-2">Direct</h4>
-          <a href="mailto:info@globuselevators.com" className="text-white/80 hover:text-amber-400 transition-colors text-sm font-mono">info@globuselevators.com</a>
-          <a href="tel:+919931334433" className="text-white/80 hover:text-amber-400 transition-colors text-sm font-mono">+91 99313 34433</a>
+          <a href="mailto:info@globuselevators.com" className="text-white/80 hover:text-white transition-colors text-sm font-mono">info@globuselevators.com</a>
+          <a href="tel:+919931334433" className="text-white/80 hover:text-white transition-colors text-sm font-mono">+91 99313 34433</a>
           <div className="pt-2 text-xs text-white/60">
             A/151, Sector 69, Noida, UP
           </div>
