@@ -37,10 +37,10 @@ export function FloatingConsultation() {
         >
           <button 
             onClick={handleClose}
-            className="absolute top-1/2 -translate-y-1/2 right-4 text-white/40 hover:text-white transition-colors"
+            className="absolute top-1/2 -translate-y-1/2 right-2.5 p-2 text-white/50 hover:text-white transition-colors"
             aria-label="Close"
           >
-            <X size={14} />
+            <X size={15} />
           </button>
           
           <div className="bg-white text-black p-2 flex-shrink-0 mr-4">

@@ -46,70 +46,70 @@ export default function ProductsPage() {
       <GE360Showcase />
 
       {/* Chapter 01: Home Lift Systems (Traction & Hydraulic) */}
-      <section id="residential" className="py-28 md:py-36 px-6 md:px-12 border-b border-white/10 bg-neutral-950">
+      <section id="residential" className="py-28 md:py-36 px-6 md:px-12 border-t border-black/10 bg-white text-black">
         <div className="container mx-auto max-w-7xl">
-          <div className="flex flex-col md:flex-row md:items-end justify-between border-b border-white/10 pb-8 mb-16 gap-6">
+          <div className="flex flex-col md:flex-row md:items-end justify-between border-b border-black/10 pb-8 mb-16 gap-6">
             <div>
-              <span className="text-xs font-mono tracking-widest text-amber-400 uppercase block mb-2">
+              <span className="text-xs font-mono tracking-widest text-neutral-500 uppercase block mb-2 font-bold">
                 SERIES 01 // RESIDENTIAL MOBILITY
               </span>
-              <h2 className="text-3xl md:text-5xl font-black tracking-tight">
+              <h2 className="text-3xl md:text-5xl font-black tracking-tight text-black">
                 Home Lifts: Hydraulic &amp; Traction
               </h2>
             </div>
-            <p className="text-base text-white/70 max-w-md font-medium">
+            <p className="text-base text-neutral-700 max-w-md font-medium">
               Space-efficient, quiet, and elegant hydraulic or traction lifts designed to fit seamlessly into any residential layout.
             </p>
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center mb-16">
             <div>
-              <h3 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
+              <h3 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-black">
                 Compact Zero-Pit Configurations
               </h3>
-              <p className="text-base md:text-lg text-white/80 mb-6 leading-relaxed font-medium">
+              <p className="text-base md:text-lg text-neutral-700 mb-6 leading-relaxed font-medium">
                 Engineered to fit into tight interior architectural footprints starting from just 3x4 ft without requiring massive structural alterations or pit excavation.
               </p>
               
-              <div className="border-t border-white/15 pt-6 grid grid-cols-2 gap-6">
+              <div className="border-t border-black/15 pt-6 grid grid-cols-2 gap-6">
                 <div>
-                  <span className="text-xs font-bold uppercase tracking-[0.1em] text-white/40 block mb-1">Max Travel</span>
-                  <span className="text-base font-bold tracking-wide">Up to 5 Floors (13m)</span>
+                  <span className="text-xs font-bold uppercase tracking-[0.1em] text-neutral-500 block mb-1">Max Travel</span>
+                  <span className="text-base font-bold tracking-wide text-black">Up to 5 Floors (13m)</span>
                 </div>
                 <div>
-                  <span className="text-xs font-bold uppercase tracking-[0.1em] text-white/40 block mb-1">Capacity</span>
-                  <span className="text-base font-bold tracking-wide">Up to 4 Passengers</span>
+                  <span className="text-xs font-bold uppercase tracking-[0.1em] text-neutral-500 block mb-1">Capacity</span>
+                  <span className="text-base font-bold tracking-wide text-black">Up to 4 Passengers</span>
                 </div>
                 <div>
-                  <span className="text-xs font-bold uppercase tracking-[0.1em] text-white/40 block mb-1">Power Grid</span>
-                  <span className="text-base font-bold tracking-wide">Single Phase 215V</span>
+                  <span className="text-xs font-bold uppercase tracking-[0.1em] text-neutral-500 block mb-1">Power Grid</span>
+                  <span className="text-base font-bold tracking-wide text-black">Single Phase 215V</span>
                 </div>
                 <div>
-                  <span className="text-xs font-bold uppercase tracking-[0.1em] text-white/40 block mb-1">Drive Types</span>
-                  <span className="text-base font-bold tracking-wide">Hydraulic or Traction</span>
+                  <span className="text-xs font-bold uppercase tracking-[0.1em] text-neutral-500 block mb-1">Drive Types</span>
+                  <span className="text-base font-bold tracking-wide text-black">Hydraulic or Traction</span>
                 </div>
               </div>
 
-              <div className="mt-8 border-t border-white/15 pt-6">
-                <h4 className="text-xs font-bold uppercase tracking-widest text-amber-300 mb-3">Custom Architectural Finishes</h4>
-                <ul className="space-y-2 text-sm text-white/70 font-medium">
-                  <li className="flex items-center"><span className="text-amber-400 mr-3">&rarr;</span> Mirror-etched Stainless Steel &amp; Titanium Finishes</li>
-                  <li className="flex items-center"><span className="text-amber-400 mr-3">&rarr;</span> 360-Degree Panoramic Toughened Glass Walls</li>
-                  <li className="flex items-center"><span className="text-amber-400 mr-3">&rarr;</span> Anti-skid Italian Granite or Hardwood Flooring</li>
-                  <li className="flex items-center"><span className="text-amber-400 mr-3">&rarr;</span> Recessed Ambient Architectural Lighting</li>
+              <div className="mt-8 border-t border-black/15 pt-6">
+                <h4 className="text-xs font-bold uppercase tracking-widest text-amber-700 mb-3">Custom Architectural Finishes</h4>
+                <ul className="space-y-2 text-sm text-neutral-700 font-medium">
+                  <li className="flex items-center"><span className="text-amber-600 mr-3">&rarr;</span> Mirror-etched Stainless Steel &amp; Titanium Finishes</li>
+                  <li className="flex items-center"><span className="text-amber-600 mr-3">&rarr;</span> 360-Degree Panoramic Toughened Glass Walls</li>
+                  <li className="flex items-center"><span className="text-amber-600 mr-3">&rarr;</span> Anti-skid Italian Granite or Hardwood Flooring</li>
+                  <li className="flex items-center"><span className="text-amber-600 mr-3">&rarr;</span> Recessed Ambient Architectural Lighting</li>
                 </ul>
               </div>
 
-              <div className="mt-8 pt-4 flex gap-4">
+              <div className="mt-8 pt-4 flex flex-wrap gap-4">
                 <button 
                   onClick={() => handleDownload("/Hydroelectric new.pdf", "Hydro-Electric Series Specifications")}
-                  className="border border-white/40 px-6 py-3 text-xs font-bold tracking-[0.15em] uppercase text-white hover:bg-white hover:text-black transition-colors"
+                  className="border border-black px-6 py-3 text-xs font-bold tracking-[0.15em] uppercase text-black hover:bg-black hover:text-white transition-colors"
                 >
                   ↓ Hydraulic Specs (PDF)
                 </button>
                 <button 
                   onClick={() => handleDownload("/traction lift brochure.pdf", "Residential Traction Lift Specifications")}
-                  className="border border-white/20 px-6 py-3 text-xs font-bold tracking-[0.15em] uppercase text-white/70 hover:bg-white hover:text-black transition-colors"
+                  className="border border-black/30 px-6 py-3 text-xs font-bold tracking-[0.15em] uppercase text-black hover:bg-black hover:text-white transition-colors"
                 >
                   ↓ Traction Specs (PDF)
                 </button>
@@ -133,7 +133,7 @@ export default function ProductsPage() {
       </section>
 
       {/* Chapter 02: Commercial Elevators */}
-      <section id="commercial" className="py-28 md:py-36 px-6 md:px-12 border-b border-white/10 bg-black">
+      <section id="commercial" className="py-28 md:py-36 px-6 md:px-12 border-t border-white/10 bg-black text-white">
         <div className="container mx-auto max-w-7xl">
           <div className="flex flex-col md:flex-row md:items-end justify-between border-b border-white/10 pb-8 mb-16 gap-6">
             <div>
@@ -207,18 +207,18 @@ export default function ProductsPage() {
       </section>
 
       {/* Chapter 03: Specialized Solutions */}
-      <section id="industrial" className="py-28 md:py-36 px-6 md:px-12 bg-neutral-950">
+      <section id="industrial" className="py-28 md:py-36 px-6 md:px-12 border-t border-black/10 bg-white text-black">
         <div className="container mx-auto max-w-7xl">
-          <div className="flex flex-col md:flex-row md:items-end justify-between border-b border-white/10 pb-8 mb-16 gap-6">
+          <div className="flex flex-col md:flex-row md:items-end justify-between border-b border-black/10 pb-8 mb-16 gap-6">
             <div>
-              <span className="text-xs font-mono tracking-widest text-amber-400 uppercase block mb-2">
+              <span className="text-xs font-mono tracking-widest text-neutral-500 uppercase block mb-2 font-bold">
                 SERIES 03 // LOGISTICS &amp; SPECIALIZED
               </span>
-              <h2 className="text-3xl md:text-5xl font-black tracking-tight">
+              <h2 className="text-3xl md:text-5xl font-black tracking-tight text-black">
                 Specialized Solutions
               </h2>
             </div>
-            <p className="text-base text-white/70 max-w-md font-medium">
+            <p className="text-base text-neutral-700 max-w-md font-medium">
               Goods elevators, car parking lifts, and dumbwaiters built for specialized industrial, commercial, and hospitality requirements.
             </p>
           </div>
@@ -226,24 +226,24 @@ export default function ProductsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
             
             <div>
-              <h3 className="text-3xl font-bold tracking-tight mb-4">Industrial Freight, Automotive &amp; Dumbwaiters</h3>
-              <p className="text-base text-white/80 leading-relaxed font-medium mb-8">
+              <h3 className="text-3xl font-bold tracking-tight mb-4 text-black">Industrial Freight, Automotive &amp; Dumbwaiters</h3>
+              <p className="text-base text-neutral-700 leading-relaxed font-medium mb-8">
                 Engineered with heavy-gauge structural steel frames, reinforced diamond-plate floors, and heavy-duty gates capable of sustaining extreme pallet truck and vehicular loads.
               </p>
 
-              <div className="grid grid-cols-2 gap-6 border-t border-white/15 pt-6">
+              <div className="grid grid-cols-2 gap-6 border-t border-black/15 pt-6">
                 <div>
-                  <span className="text-xs font-bold uppercase tracking-[0.1em] text-white/40 block mb-1">Freight Range</span>
-                  <p className="text-sm text-white/80 font-medium">500 kg up to 5,000 kg heavy industrial rating.</p>
+                  <span className="text-xs font-bold uppercase tracking-[0.1em] text-neutral-500 block mb-1">Freight Range</span>
+                  <p className="text-sm text-neutral-800 font-bold">500 kg up to 5,000 kg heavy industrial rating.</p>
                 </div>
                 <div>
-                  <span className="text-xs font-bold uppercase tracking-[0.1em] text-white/40 block mb-1">Car Parking</span>
-                  <p className="text-sm text-white/80 font-medium">Automated hydraulic stackers and pit lifts.</p>
+                  <span className="text-xs font-bold uppercase tracking-[0.1em] text-neutral-500 block mb-1">Car Parking</span>
+                  <p className="text-sm text-neutral-800 font-bold">Automated hydraulic stackers and pit lifts.</p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-black border border-white/15 p-8 md:p-10">
+            <div className="bg-neutral-50 border border-black/10 p-8 md:p-10">
               <div className="relative h-[260px] w-full mb-6 overflow-hidden bg-neutral-900 group">
                 <Image 
                   src="/freight_elevator.jpg" 
@@ -256,18 +256,18 @@ export default function ProductsPage() {
                 <div className="absolute inset-0 bg-amber-500/10 mix-blend-overlay pointer-events-none" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
               </div>
-              <h4 className="text-xs font-bold tracking-[0.2em] text-amber-300 uppercase mb-4">Fail-Safe Industrial Safeguards</h4>
-              <ul className="space-y-3 text-sm text-white/75 font-medium">
+              <h4 className="text-xs font-bold tracking-[0.2em] text-amber-700 uppercase mb-4">Fail-Safe Industrial Safeguards</h4>
+              <ul className="space-y-3 text-sm text-neutral-800 font-medium">
                 <li className="flex items-start">
-                  <span className="text-amber-400 mr-3 font-mono font-bold">01</span>
+                  <span className="text-amber-600 mr-3 font-mono font-bold">01</span>
                   Automatic Rescue Device (ARD) battery descent during industrial grid failure.
                 </li>
                 <li className="flex items-start">
-                  <span className="text-amber-400 mr-3 font-mono font-bold">02</span>
+                  <span className="text-amber-600 mr-3 font-mono font-bold">02</span>
                   Electronic load-weighing cells preventing motion on overload condition.
                 </li>
                 <li className="flex items-start">
-                  <span className="text-amber-400 mr-3 font-mono font-bold">03</span>
+                  <span className="text-amber-600 mr-3 font-mono font-bold">03</span>
                   Instantaneous guide rail safety gear brakes for instantaneous mechanical arrest.
                 </li>
               </ul>

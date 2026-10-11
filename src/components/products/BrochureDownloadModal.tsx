@@ -29,44 +29,47 @@ export function BrochureDownloadModal({ isOpen, onClose, pdfUrl, pdfTitle }: Bro
   return (
     <AnimatePresence>
       {isOpen && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-3 sm:p-4 md:p-6 overflow-y-auto">
           <motion.div 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
-            className="absolute inset-0 bg-black/80 backdrop-blur-sm"
+            className="fixed inset-0 bg-black/85"
           />
           
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 20 }}
-            className="relative w-full max-w-2xl bg-black border border-white/20 p-8 md:p-12 shadow-2xl"
+            initial={{ opacity: 0, scale: 0.98, y: 15 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.98, y: 15 }}
+            className="relative w-full max-w-xl bg-black border border-white/20 p-5 sm:p-8 md:p-10 shadow-2xl my-auto max-h-[92dvh] overflow-y-auto z-10"
           >
             <button 
               onClick={onClose}
-              className="absolute top-6 right-6 text-white/50 hover:text-white transition-colors"
+              className="absolute top-3 right-3 sm:top-5 sm:right-5 p-2 text-white/60 hover:text-white transition-colors"
+              aria-label="Close modal"
             >
-              <X size={24} />
+              <X size={22} />
             </button>
 
-            <div className="mb-8 border-b border-white/10 pb-8">
-              <span className="text-xs md:text-sm font-semibold tracking-[0.2em] text-white/50 uppercase mb-4 block">
-                Technical Specifications
+            <div className="mb-6 border-b border-white/10 pb-5 pr-8">
+              <span className="text-[10px] sm:text-xs font-mono tracking-widest text-amber-400 uppercase mb-1.5 block">
+                Technical Specifications // Instant Access
               </span>
-              <h2 className="text-3xl font-bold tracking-tighter mb-4 leading-[1.1]">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-black tracking-tight mb-2 text-white leading-tight">
                 {pdfTitle}
               </h2>
-              <p className="text-white/60 font-medium">
-                Please provide your contact details to access the full technical brochure.
+              <p className="text-xs sm:text-sm text-white/70 font-medium">
+                Enter your details to initiate immediate PDF download.
               </p>
             </div>
 
             <ContactForm 
               idPrefix={`download-${pdfUrl.replace(/[^a-zA-Z0-9]/g, '')}`} 
-              buttonText="Download Brochure" 
+              buttonText="Download Technical PDF ↓" 
               source={`Brochure Download: ${pdfTitle}`}
+              compact={true}
+              theme="dark"
               onSuccessCallback={triggerDownloadAndClose}
             />
           </motion.div>

@@ -12,24 +12,24 @@ export function ContactSection() {
         {/* Left: Contact Info & Typography */}
         <div className="flex flex-col justify-between">
           <div>
-            <span className="text-xs md:text-sm font-semibold tracking-[0.2em] text-white/50 uppercase mb-6 block">
-              Consultation
+            <span className="text-xs md:text-sm font-semibold tracking-[0.3em] text-amber-400 uppercase mb-4 block">
+              Direct Engineering Consultation
             </span>
-            <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter mb-8 leading-[1.1]">
+            <h2 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tighter mb-8 leading-[1.05]">
               Start Your <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-neutral-500">
+              <span className="text-white/40">
                 Project.
               </span>
             </h2>
-            <p className="text-lg md:text-xl text-white/60 max-w-md font-medium mb-12">
-              Talk to our team today to find the perfect elevator for your building.
+            <p className="text-lg md:text-xl text-white/70 max-w-md font-medium mb-12">
+              Talk to our engineering team today to review structural blueprints and select the optimal elevator system.
             </p>
           </div>
 
-          <div className="space-y-12 mt-12 lg:mt-0">
+          <div className="space-y-10 mt-12 lg:mt-0">
             <div>
-              <h4 className="text-sm font-semibold tracking-[0.1em] text-white/40 uppercase mb-2">Headquarters</h4>
-              <p className="text-lg md:text-xl font-medium tracking-wide text-white/80">
+              <h4 className="text-xs font-mono font-bold tracking-widest text-white/60 uppercase mb-2">Headquarters</h4>
+              <p className="text-lg md:text-xl font-medium tracking-wide text-white">
                 Globus Elevators<br />
                 A/151, Sector 69, Noida<br />
                 Uttar Pradesh, India
@@ -37,41 +37,41 @@ export function ContactSection() {
             </div>
             
             <div>
-              <h4 className="text-sm font-semibold tracking-[0.1em] text-white/40 uppercase mb-4">Pan-India Coverage</h4>
+              <h4 className="text-xs font-mono font-bold tracking-widest text-white/60 uppercase mb-4">Pan-India Coverage</h4>
               <div className="space-y-4">
                 <div>
-                  <span className="text-xs font-bold tracking-[0.1em] text-white/30 uppercase block mb-1">North & NCR</span>
-                  <p className="text-base font-medium text-white/80">Delhi NCR, UP, Punjab, Haryana</p>
+                  <span className="text-xs font-mono font-bold tracking-[0.1em] text-amber-400 uppercase block mb-1">North &amp; NCR</span>
+                  <p className="text-base font-medium text-white/90">Delhi NCR, UP, Punjab, Haryana</p>
                 </div>
                 <div>
-                  <span className="text-xs font-bold tracking-[0.1em] text-white/30 uppercase block mb-1">Central & East</span>
-                  <p className="text-base font-medium text-white/80">MP (Bhopal), Chhattisgarh, WB (Kolkata), Bihar, Jharkhand (Ranchi), Odisha, Assam</p>
+                  <span className="text-xs font-mono font-bold tracking-[0.1em] text-amber-400 uppercase block mb-1">Central &amp; East</span>
+                  <p className="text-base font-medium text-white/90">MP (Bhopal), Chhattisgarh, WB (Kolkata), Bihar, Jharkhand (Ranchi), Odisha, Assam</p>
                 </div>
                 <div>
-                  <span className="text-xs font-bold tracking-[0.1em] text-white/30 uppercase block mb-1">South & West</span>
-                  <p className="text-base font-medium text-white/80">Karnataka, Kerala, Maharashtra (Pusad)</p>
+                  <span className="text-xs font-mono font-bold tracking-[0.1em] text-amber-400 uppercase block mb-1">South &amp; West</span>
+                  <p className="text-base font-medium text-white/90">Karnataka, Kerala, Maharashtra (Pusad)</p>
                 </div>
               </div>
             </div>
 
-            <div className="pt-4 border-t border-white/10 space-y-1">
-              <h4 className="text-sm font-semibold tracking-[0.1em] text-white/40 uppercase mb-2">Direct Inquiries</h4>
+            <div className="pt-4 border-t border-white/10 space-y-2">
+              <h4 className="text-xs font-mono font-bold tracking-widest text-white/60 uppercase mb-2">Direct Inquiries</h4>
               <p className="text-lg md:text-xl font-medium tracking-wide">
-                <a href="mailto:info@globuselevators.com" className="hover:underline">info@globuselevators.com</a>
+                <a href="mailto:info@globuselevators.com" className="hover:text-amber-400 transition-colors">info@globuselevators.com</a>
               </p>
               <p className="text-sm text-white/60 font-mono">
                 Direct: <a href="mailto:globuselevators.ge@gmail.com" className="hover:underline">globuselevators.ge@gmail.com</a>
               </p>
               <p className="text-lg md:text-xl font-medium tracking-wide pt-1">
-                <a href="tel:+919931334433" className="hover:underline">+91 99313 34433</a> / +91 90317 61990
+                <a href="tel:+919931334433" className="hover:text-amber-400 transition-colors">+91 99313 34433</a> / +91 90317 61990
               </p>
             </div>
           </div>
         </div>
 
         {/* Right: Consultation Form */}
-        <div className="flex flex-col justify-center mt-16 lg:mt-0">
-          <ContactForm idPrefix="consult" buttonText="Submit Inquiry" source="Architectural Consultation (Home)" />
+        <div className="flex flex-col justify-center mt-12 lg:mt-0">
+          <ContactForm idPrefix="consult" buttonText="Submit Inquiry" source="Architectural Consultation (Home)" theme="dark" />
         </div>
 
       </div>

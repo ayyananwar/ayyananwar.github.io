@@ -1,6 +1,7 @@
 import { blogPosts } from "@/data/blogs";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 
 export function generateStaticParams() {
   return blogPosts.map((post) => ({
@@ -17,60 +18,89 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
   }
 
   return (
-    <main className="min-h-screen bg-black text-white pt-32 pb-24 selection:bg-brand-500 selection:text-white">
-      <article className="container mx-auto px-6 md:px-12 max-w-4xl">
-        
+    <main className="min-h-screen bg-black text-white pt-32 pb-24 selection:bg-white selection:text-black">
+      
+      {/* Header */}
+      <section className="container mx-auto px-6 md:px-12 max-w-4xl mb-16">
         {/* Back Link */}
         <Link 
           href="/blogs" 
-          className="inline-flex items-center text-xs font-semibold tracking-[0.2em] uppercase text-white/40 hover:text-white transition-colors mb-20"
+          className="inline-flex items-center text-xs font-bold tracking-[0.2em] uppercase text-white/50 hover:text-white transition-colors mb-12"
         >
-          <span className="mr-4 text-lg leading-none">←</span>
+          <span className="mr-3 text-lg leading-none">&larr;</span>
           Back to Journal
         </Link>
 
-        {/* Header */}
-        <header className="mb-16 border-b border-white/10 pb-12">
-          <div className="flex items-center space-x-3 mb-8">
-            <span className="text-xs font-semibold tracking-[0.2em] uppercase text-white">
+        <header className="border-b border-white/10 pb-12">
+          <div className="flex items-center space-x-3 mb-6">
+            <span className="text-xs font-mono font-bold tracking-widest uppercase text-amber-400">
               {post.category}
             </span>
-            <span className="text-white/20">•</span>
-            <span className="text-xs font-medium tracking-[0.2em] uppercase text-white/40">
+            <span className="text-white/30">&bull;</span>
+            <span className="text-xs font-mono tracking-wider uppercase text-white/60">
               {post.date}
             </span>
           </div>
           
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter mb-8 leading-[1.1]">
+          <h1 className="text-4xl md:text-6xl font-black tracking-tighter mb-6 leading-[1.05]">
             {post.title}
           </h1>
           
-          <p className="text-xl md:text-2xl text-white/50 leading-relaxed max-w-3xl mb-12">
+          <p className="text-xl md:text-2xl text-white/70 leading-relaxed mb-8 font-medium">
             {post.excerpt}
           </p>
           
-          <div className="flex items-center text-xs font-semibold tracking-[0.2em] uppercase text-white/40">
+          <div className="flex items-center text-xs font-mono tracking-widest uppercase text-white/50">
             <span>By {post.author}</span>
             <span className="mx-3 text-white/20">|</span>
-            <span>Globus Engineering</span>
+            <span>Globus Engineering Editorial</span>
           </div>
         </header>
+      </section>
 
-        {/* Featured Image Placeholder */}
-        <div className="w-full aspect-[21/9] md:aspect-[3/1] bg-[#0a0a0a] border border-white/5 mb-16 relative flex items-center justify-center overflow-hidden">
-          <div className="absolute inset-0 bg-white/[0.02]" />
-          <span className="text-white/10 font-bold tracking-[0.2em] uppercase text-sm relative z-10">
-            Featured Image
-          </span>
-        </div>
+      {/* Article Body (Vibrant White Section) */}
+      <section className="py-20 md:py-28 px-6 md:px-12 border-t border-black/10 bg-white text-black">
+        <article className="container mx-auto max-w-4xl">
+          {/* Featured Image */}
+          {post.imageUrl && (
+            <div className="w-full aspect-[21/9] md:aspect-[2.2/1] bg-neutral-900 border border-black/10 mb-16 relative overflow-hidden">
+              <Image 
+                src={post.imageUrl}
+                alt={post.title}
+                fill
+                className="object-cover"
+                priority
+              />
+              {/* Golden Lighting Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-amber-600/35 via-amber-500/15 to-transparent mix-blend-color pointer-events-none" />
+              <div className="absolute inset-0 bg-amber-500/10 mix-blend-overlay pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
+            </div>
+          )}
 
-        {/* Content */}
-        <div 
-          className="max-w-none text-white/80 leading-relaxed space-y-6 text-lg md:text-xl"
-          dangerouslySetInnerHTML={{ __html: post.content }}
-        />
-        
-      </article>
+          {/* Content */}
+          <div 
+            className="prose prose-lg max-w-none text-neutral-800 leading-relaxed space-y-6 text-lg md:text-xl font-normal [&>p]:leading-relaxed [&>h2]:text-2xl [&>h2]:md:text-4xl [&>h2]:font-black [&>h2]:tracking-tight [&>h2]:mt-12 [&>h2]:mb-6 [&>blockquote]:border-l-4 [&>blockquote]:border-black [&>blockquote]:pl-6 [&>blockquote]:italic [&>blockquote]:text-neutral-700"
+            dangerouslySetInnerHTML={{ __html: post.content }}
+          />
+
+          <div className="mt-16 pt-12 border-t border-black/10 flex justify-between items-center">
+            <Link 
+              href="/blogs"
+              className="text-xs font-bold tracking-[0.2em] uppercase text-black border-b border-black pb-1 hover:opacity-60 transition-opacity"
+            >
+              &larr; Back to Journal
+            </Link>
+            <Link 
+              href="/contact"
+              className="text-xs font-bold tracking-[0.2em] uppercase text-black border-b border-black pb-1 hover:opacity-60 transition-opacity"
+            >
+              Consult With Our Engineers &rarr;
+            </Link>
+          </div>
+        </article>
+      </section>
+
     </main>
   );
 }

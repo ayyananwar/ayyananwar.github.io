@@ -26,6 +26,7 @@ export const blogPosts: BlogPost[] = [
     date: "October 12, 2026",
     category: "Architecture",
     author: "Elena Rostova",
+    imageUrl: "/luxury_elevator.jpg",
   },
   {
     id: "sustainable-engineering",
@@ -35,6 +36,7 @@ export const blogPosts: BlogPost[] = [
     date: "September 28, 2026",
     category: "Technology",
     author: "David Chen",
+    imageUrl: "/commercial_elevator.jpg",
   },
   {
     id: "designing-for-silence",
@@ -44,5 +46,6 @@ export const blogPosts: BlogPost[] = [
     date: "September 15, 2026",
     category: "Design",
     author: "Sarah Jenkins",
+    imageUrl: "/freight_elevator.jpg",
   }
 ];

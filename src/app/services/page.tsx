@@ -62,9 +62,9 @@ export default function ServicesPage() {
     <main className="bg-black text-white pt-32 pb-24 selection:bg-white selection:text-black min-h-screen">
       
       {/* Header */}
-      <section className="container mx-auto px-6 md:px-12 max-w-7xl mb-24 md:mb-32">
+      <section className="container mx-auto px-6 md:px-12 max-w-7xl mb-20 md:mb-28">
         <header className="border-b border-white/10 pb-12">
-          <span className="text-xs md:text-sm font-bold tracking-[0.3em] text-white/40 uppercase block mb-4">
+          <span className="text-xs md:text-sm font-semibold tracking-[0.3em] text-amber-400 uppercase block mb-4">
             Globus Elevators // Lifecycle Engineering
           </span>
           <h1 className="text-4xl md:text-6xl lg:text-8xl font-black tracking-tighter mb-6 leading-[1.05]">
@@ -72,72 +72,128 @@ export default function ServicesPage() {
             <span className="text-white/40">Execution.</span>
           </h1>
           <p className="text-lg md:text-xl text-white/70 max-w-3xl font-medium leading-relaxed">
-            Our engagement doesn&rsquo;t end at installation. We offer comprehensive lifecycle services to ensure your equipment runs smoothly, safely, and quietly year-round.
+            Our engagement doesn&rsquo;t end at installation. We provide comprehensive lifecycle engineering: from initial hoistway surveys to lifetime preventive maintenance.
           </p>
         </header>
       </section>
 
-      {/* Services Detailed Grid */}
-      <section className="container mx-auto max-w-7xl px-6 md:px-12 mb-24 md:mb-36">
-        <div className="space-y-16 md:space-y-24">
-          {lifecycleServices.map((service) => (
-            <div 
-              key={service.id} 
-              className="border border-white/15 bg-neutral-950 p-8 md:p-14 hover:border-white/40 transition-colors"
-            >
-              <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-8 mb-8 pb-8 border-b border-white/10">
+      {/* Phase 01: Pre-Construction & Deployment (Vibrant White Section) */}
+      <section className="py-28 md:py-36 px-6 md:px-12 border-t border-black/10 bg-white text-black">
+        <div className="container mx-auto max-w-7xl">
+          <div className="border-b border-black/10 pb-8 mb-16">
+            <span className="text-xs font-mono font-bold tracking-widest text-neutral-500 uppercase block mb-2">
+              PHASE 01 // PRE-CONSTRUCTION &amp; COMMISSIONING
+            </span>
+            <h2 className="text-3xl md:text-6xl font-black tracking-tight text-black">
+              Site Survey &amp; Precision Build.
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+            {lifecycleServices.slice(0, 2).map((service) => (
+              <div key={service.id} className="flex flex-col justify-between">
                 <div>
-                  <span className="text-xs font-mono font-bold tracking-widest text-white/40 uppercase block mb-3">
-                    {service.id} // {service.category}
+                  <span className="text-5xl lg:text-7xl font-black text-neutral-200 block mb-4 leading-none">
+                    {service.id}.
                   </span>
-                  <h2 className="text-3xl md:text-5xl font-black tracking-tight text-white">
+                  <span className="text-xs font-mono font-bold tracking-widest text-amber-700 uppercase block mb-2">
+                    {service.category}
+                  </span>
+                  <h3 className="text-2xl md:text-4xl font-black tracking-tight mb-4 text-black">
                     {service.title}
-                  </h2>
-                </div>
-                <div className="lg:max-w-md">
-                  <p className="text-base md:text-lg text-white/75 font-medium leading-relaxed">
+                  </h3>
+                  <p className="text-base md:text-lg text-neutral-700 font-medium leading-relaxed mb-8">
                     {service.description}
                   </p>
                 </div>
-              </div>
 
-              <div>
-                <h4 className="text-xs font-bold tracking-[0.2em] uppercase text-white/50 mb-6">
-                  Key Scope &amp; Deliverables
-                </h4>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                  {service.features.map((feat, idx) => (
-                    <div key={idx} className="border-l border-white/20 pl-4 py-1">
-                      <span className="text-xs font-mono text-white/40 block mb-1">0{idx + 1}</span>
-                      <p className="text-sm font-medium text-white/90 leading-snug">{feat}</p>
-                    </div>
-                  ))}
+                <div className="border-t border-black/15 pt-6">
+                  <h4 className="text-xs font-bold tracking-[0.2em] uppercase text-neutral-500 mb-4">
+                    Key Scope &amp; Deliverables
+                  </h4>
+                  <ul className="space-y-3">
+                    {service.features.map((feat, idx) => (
+                      <li key={idx} className="flex items-start text-sm text-neutral-800 font-medium">
+                        <span className="text-amber-600 font-bold mr-3 font-mono">0{idx + 1}</span>
+                        {feat}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* Contact Banner */}
-      <section className="container mx-auto max-w-7xl px-6 md:px-12">
-        <div className="border border-white/10 bg-neutral-950 text-white p-10 md:p-16 flex flex-col md:flex-row md:items-center justify-between gap-8">
-          <div>
-            <span className="text-xs font-semibold tracking-[0.25em] text-white/40 uppercase block mb-2">
-              Maintenance &amp; Surveys
+      {/* Phase 02: Longevity, AMC & Modernization (Dark Obsidian Section) */}
+      <section className="py-28 md:py-36 px-6 md:px-12 border-t border-white/10 bg-black text-white">
+        <div className="container mx-auto max-w-7xl">
+          <div className="border-b border-white/10 pb-8 mb-16">
+            <span className="text-xs font-mono font-bold tracking-widest text-amber-400 uppercase block mb-2">
+              PHASE 02 // LIFETIME RELIABILITY &amp; RETROFITS
             </span>
-            <h3 className="text-3xl md:text-5xl font-black tracking-tight mb-2">
+            <h2 className="text-3xl md:text-6xl font-black tracking-tight text-white">
+              Preventative AMC &amp; Modernization.
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+            {lifecycleServices.slice(2, 4).map((service) => (
+              <div key={service.id} className="flex flex-col justify-between">
+                <div>
+                  <span className="text-5xl lg:text-7xl font-black text-neutral-800 block mb-4 leading-none">
+                    {service.id}.
+                  </span>
+                  <span className="text-xs font-mono font-bold tracking-widest text-amber-400 uppercase block mb-2">
+                    {service.category}
+                  </span>
+                  <h3 className="text-2xl md:text-4xl font-black tracking-tight mb-4 text-white">
+                    {service.title}
+                  </h3>
+                  <p className="text-base md:text-lg text-white/75 font-medium leading-relaxed mb-8">
+                    {service.description}
+                  </p>
+                </div>
+
+                <div className="border-t border-white/15 pt-6">
+                  <h4 className="text-xs font-bold tracking-[0.2em] uppercase text-white/40 mb-4">
+                    Key Scope &amp; Deliverables
+                  </h4>
+                  <ul className="space-y-3">
+                    {service.features.map((feat, idx) => (
+                      <li key={idx} className="flex items-start text-sm text-white/80 font-medium">
+                        <span className="text-amber-400 font-bold mr-3 font-mono">0{idx + 1}</span>
+                        {feat}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Phase 03: Direct Consultation Banner (Vibrant White Section) */}
+      <section className="py-24 md:py-32 px-6 md:px-12 border-t border-black/10 bg-white text-black">
+        <div className="container mx-auto max-w-7xl flex flex-col md:flex-row md:items-center justify-between gap-8">
+          <div>
+            <span className="text-xs font-mono font-bold tracking-[0.25em] text-neutral-500 uppercase block mb-2">
+              MAINTENANCE &amp; SURVEYS
+            </span>
+            <h3 className="text-3xl md:text-5xl font-black tracking-tight mb-3 text-black">
               Book a Site Survey or Request AMC Quotation
             </h3>
-            <p className="text-base text-white/70 font-medium max-w-xl">
+            <p className="text-base text-neutral-700 font-medium max-w-xl">
               Connect directly with our engineering office in Noida or request on-site technical inspection anywhere in our coverage region.
             </p>
           </div>
           <Link
             href="/contact"
-            className="px-10 py-5 bg-white text-black text-xs font-bold tracking-[0.2em] uppercase hover:bg-neutral-200 transition-colors shrink-0 text-center"
+            className="px-10 py-5 bg-black text-white text-xs font-bold tracking-[0.2em] uppercase hover:bg-neutral-800 transition-colors shrink-0 text-center"
           >
-            Contact Engineering Team
+            Contact Engineering Team &rarr;
           </Link>
         </div>
       </section>
