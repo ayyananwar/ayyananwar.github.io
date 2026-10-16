@@ -12,8 +12,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Globus Elevators | Premium Architecture",
-  description: "Experience cinematic luxury with Globus Elevators.",
+  title: "Globus Elevators | Elevating Standards, Enriching Spaces",
+  description: "Premium vertical transportation solutions specialising in custom design, manufacturing, assembly, and maintenance for residential and commercial spaces.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
