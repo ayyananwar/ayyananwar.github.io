@@ -4,11 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { BrochureDownloadModal } from "@/components/products/BrochureDownloadModal";
 
-interface GE360ShowcaseProps {
-  compact?: boolean;
-}
-
-export function GE360Showcase({ compact = false }: GE360ShowcaseProps) {
+export function GE360Showcase() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [showTechnicalSpecs, setShowTechnicalSpecs] = useState(false);
 

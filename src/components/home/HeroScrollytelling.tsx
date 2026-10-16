@@ -172,7 +172,7 @@ export function HeroScrollytelling() {
               Engineered <br className="hidden sm:block" />For Safety.
             </h2>
             <p className="text-base md:text-xl text-white/80 font-medium mb-8 leading-relaxed pointer-events-none">
-              Your family's safety is our highest priority. 100% reliable, heavy-duty elevators built to last a lifetime.
+              Your family&apos;s safety is our highest priority. 100% reliable, heavy-duty elevators built to last a lifetime.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 md:justify-start justify-center">
               <Link 

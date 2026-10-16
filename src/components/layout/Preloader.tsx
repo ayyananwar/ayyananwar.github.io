@@ -2,14 +2,11 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { usePathname } from "next/navigation";
 
 export function Preloader() {
   const [isLoading, setIsLoading] = useState(true);
-  const pathname = usePathname();
 
   useEffect(() => {
-    setIsLoading(true);
     // Lock scrolling while loading
     document.body.style.overflow = "hidden";
 
@@ -25,7 +22,7 @@ export function Preloader() {
       clearTimeout(timer);
       document.body.style.overflow = "";
     };
-  }, [pathname]);
+  }, []);
 
   return (
     <AnimatePresence>

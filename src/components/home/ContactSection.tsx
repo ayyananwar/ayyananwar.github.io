@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { ContactForm } from "@/components/shared/ContactForm";
 
 export function ContactSection() {

@@ -73,10 +73,11 @@ export function ContactForm({
       setTimeout(() => {
         setFormStatus("idle");
       }, 6000);
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error("Form submission failed:", error);
       setFormStatus("error");
-      setErrorMessage(error.message || "An unexpected error occurred. Please try again.");
+      const message = error instanceof Error ? error.message : "An unexpected error occurred. Please try again.";
+      setErrorMessage(message);
     }
   };
 
