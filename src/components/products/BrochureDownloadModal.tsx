@@ -52,21 +52,21 @@ export function BrochureDownloadModal({ isOpen, onClose, pdfUrl, pdfTitle }: Bro
               <X size={22} />
             </button>
 
-            <div className="mb-6 border-b border-white/10 pb-5 pr-8">
-              <span className="text-[10px] sm:text-xs font-mono tracking-widest text-white/40 uppercase mb-1.5 block">
-                Technical Specifications // Instant Access
+            <div className="mb-6 border-b border-white/10 pb-4 pr-8">
+              <span className="text-xs font-mono uppercase tracking-widest text-white/50 mb-1 block">
+                Technical Brochure
               </span>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-black tracking-tight mb-2 text-white leading-tight">
+              <h2 className="text-lg sm:text-2xl font-bold tracking-tight mb-2 text-white">
                 {pdfTitle}
               </h2>
-              <p className="text-xs sm:text-sm text-white/70 font-medium">
+              <p className="text-xs sm:text-sm text-white/70">
                 Enter your details to initiate immediate PDF download.
               </p>
             </div>
 
             <ContactForm 
               idPrefix={`download-${pdfUrl.replace(/[^a-zA-Z0-9]/g, '')}`} 
-              buttonText="Download Technical PDF ↓" 
+              buttonText="Download Brochure (PDF)" 
               source={`Brochure Download: ${pdfTitle}`}
               compact={true}
               theme="dark"

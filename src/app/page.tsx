@@ -1,84 +1,97 @@
 import { HeroScrollytelling } from "@/components/home/HeroScrollytelling";
 import { GE360Showcase } from "@/components/products/GE360Showcase";
+import { ContactSection } from "@/components/home/ContactSection";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white selection:bg-white selection:text-black overflow-x-clip">
-      {/* Locked 3D Scrollytelling Hero */}
+      {/* Scrollytelling Hero */}
       <HeroScrollytelling />
 
-      {/* 01 // Introduction & Philosophy (Vibrant White Architectural Section) */}
-      <section className="relative z-20 py-28 md:py-36 px-6 md:px-12 lg:px-24 bg-white text-black">
+      {/* 01 // Identity & Scope (High-contrast text on white background) */}
+      <section className="relative z-20 py-16 sm:py-24 md:py-32 px-5 sm:px-8 md:px-12 lg:px-24 bg-white text-black">
         <div className="max-w-7xl mx-auto">
           
-          <div className="flex flex-col md:flex-row md:items-end justify-between border-b-2 border-black/10 pb-12 mb-16 md:mb-24 gap-8">
+          <div className="flex flex-col md:flex-row md:items-end justify-between border-b-2 border-black/15 pb-8 sm:pb-12 mb-10 sm:mb-16 gap-6">
             <div>
-              <span className="text-xs md:text-sm font-semibold tracking-[0.3em] text-neutral-500 uppercase block mb-3">
-                01 // Identity &amp; Purpose
+              <span className="text-xs font-mono uppercase tracking-widest text-black font-bold block mb-2">
+                About Globus
               </span>
-              <h2 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.95]">
+              <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-none text-black">
                 Globus Elevators
               </h2>
-              <span className="text-lg md:text-xl text-neutral-600 tracking-wider uppercase font-semibold mt-3 block">
-                &ldquo;reaching newer heights&rdquo;
-              </span>
+              <p className="text-sm sm:text-base text-neutral-900 tracking-wider uppercase font-bold mt-2 font-mono">
+                Reaching Newer Heights
+              </p>
             </div>
             <div className="max-w-md">
-              <h3 className="text-2xl md:text-3xl font-black tracking-tight mb-3">
-                Elevating Standards, Enriching Spaces.
-              </h3>
-              <p className="text-base text-neutral-700 font-medium leading-relaxed">
-                Premium vertical transportation solutions specialising in custom design, manufacturing, assembly, and maintenance for residential and commercial spaces.
+              <p className="text-sm sm:text-base text-neutral-900 font-medium leading-relaxed">
+                Precision vertical transportation for residential villas, corporate offices, and industrial facilities.
               </p>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
-            <div className="lg:col-span-6 relative h-[450px] md:h-[550px] lg:h-[640px] w-full overflow-hidden bg-neutral-900 group">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
+            {/* Visual: Client Geometric Glass Facade */}
+            <div className="lg:col-span-7 relative h-[320px] sm:h-[420px] md:h-[500px] lg:h-[540px] w-full overflow-hidden bg-neutral-900 group">
               <Image 
-                src="/luxury_elevator.jpg" 
-                alt="Globus Elevators Engineering Architecture" 
+                src="/imgs/geometric_glass_facade.png" 
+                alt="Globus Elevators Geometric Facade Architecture" 
                 fill 
                 className="object-cover group-hover:scale-105 transition-transform duration-1000"
                 priority
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
               
-              <div className="absolute bottom-8 left-8 right-8 text-white">
-                <span className="text-xs font-mono tracking-widest uppercase text-white/60 block mb-1">
-                  PRECISION MOTION &bull; RESIDENTIAL &bull; COMMERCIAL
-                </span>
-                <span className="text-xl font-bold tracking-tight">
-                  Calibrated For Your Architectural Blueprints
-                </span>
+              <div className="absolute bottom-6 left-6 right-6 text-white">
+                <p className="text-sm sm:text-base font-bold">Residential Villa Integration</p>
+                <span className="text-[11px] font-mono text-white/80">Custom Exterior Hoistway</span>
               </div>
             </div>
             
-            <div className="lg:col-span-6 flex flex-col justify-center">
-              <span className="text-xs font-semibold tracking-[0.3em] text-neutral-500 uppercase mb-4 block">
-                Who We Are
-              </span>
-              <h3 className="text-3xl md:text-5xl lg:text-6xl font-black tracking-tighter mb-6 leading-[1.05]">
-                Seamless Mobility, <br/> Uncompromised Safety.
+            {/* Engineering Highlights */}
+            <div className="lg:col-span-5 flex flex-col justify-center">
+              <h3 className="text-2xl sm:text-3xl font-black tracking-tight mb-4 text-black">
+                Zero Pit Excavation. Zero Machine Room.
               </h3>
-              <p className="text-lg md:text-xl text-neutral-800 font-medium leading-relaxed mb-6">
-                At Globus Elevators, we combine precision engineering with sleek aesthetics to deliver seamless vertical mobility.
-              </p>
-              <p className="text-base text-neutral-600 font-medium leading-relaxed mb-10">
-                Whether you are upgrading a private villa with a compact home lift or outfitting a commercial complex with high-performance traffic solutions, our focus remains absolute: uncompromised safety, smooth operation, and long-term reliability.
+              <p className="text-sm sm:text-base text-neutral-900 font-medium leading-relaxed mb-6">
+                Engineered to eliminate structural alterations. Compact footprints starting from 3x4 ft running on standard household 215V electrical power.
               </p>
               
-              <div className="grid grid-cols-2 gap-8 pt-8 border-t border-black/10">
+              <div className="grid grid-cols-2 gap-4 pt-6 border-t border-black/15">
                 <div>
-                  <span className="text-4xl md:text-5xl font-black tracking-tighter block mb-1">100%</span>
-                  <span className="text-xs font-bold tracking-[0.15em] uppercase text-neutral-500">Rigorous Safety Standards</span>
+                  <span className="text-2xl sm:text-3xl font-black block font-mono text-black">0 mm</span>
+                  <span className="text-xs font-bold uppercase text-neutral-800">Pit Depth Required</span>
                 </div>
                 <div>
-                  <span className="text-4xl md:text-5xl font-black tracking-tighter block mb-1">24/7</span>
-                  <span className="text-xs font-bold tracking-[0.15em] uppercase text-neutral-500">Dedicated Service Support</span>
+                  <span className="text-2xl sm:text-3xl font-black block font-mono text-black">215 V</span>
+                  <span className="text-xs font-bold uppercase text-neutral-800">Single Phase Power</span>
                 </div>
+                <div>
+                  <span className="text-2xl sm:text-3xl font-black block font-mono text-black">100%</span>
+                  <span className="text-xs font-bold uppercase text-neutral-800">Safety Interlocked</span>
+                </div>
+                <div>
+                  <span className="text-2xl sm:text-3xl font-black block font-mono text-black">24/7</span>
+                  <span className="text-xs font-bold uppercase text-neutral-800">Noida Service Desk</span>
+                </div>
+              </div>
+
+              <div className="mt-8 pt-6 border-t border-black/15 flex flex-wrap gap-3">
+                <Link 
+                  href="/products" 
+                  className="px-6 py-3 bg-black text-white text-xs font-bold tracking-widest uppercase hover:bg-neutral-800 transition-colors"
+                >
+                  Our Elevators &rarr;
+                </Link>
+                <Link 
+                  href="/contact" 
+                  className="px-6 py-3 border border-black text-black text-xs font-bold tracking-widest uppercase hover:bg-black hover:text-white transition-colors"
+                >
+                  Contact Engineers
+                </Link>
               </div>
             </div>
           </div>
@@ -86,56 +99,55 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 02 // Flagship Spotlight: GE 360 Hydroelectric Series (Dark Luxury Section) */}
+      {/* 02 // Flagship Spotlight: GE 360 */}
       <GE360Showcase />
 
-      {/* 03 // Core Product Offerings (Vibrant White Architectural Section) */}
-      <section className="relative z-20 py-28 md:py-36 px-6 md:px-12 lg:px-24 bg-white text-black border-t border-black/10">
+      {/* 03 // Core Offerings (High-contrast text on white background) */}
+      <section className="relative z-20 py-16 sm:py-24 md:py-32 px-5 sm:px-8 md:px-12 lg:px-24 bg-white text-black border-t border-black/15">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row md:items-end justify-between border-b-2 border-black/10 pb-12 mb-16 md:mb-24 gap-8">
+          <div className="flex flex-col md:flex-row md:items-end justify-between border-b border-black/15 pb-8 sm:pb-12 mb-10 sm:mb-16 gap-6">
             <div>
-              <span className="text-xs md:text-sm font-semibold tracking-[0.3em] text-neutral-500 uppercase block mb-3">
-                03 // Systems Portfolio
+              <span className="text-xs font-mono uppercase tracking-widest text-black font-bold block mb-2">
+                Elevator Systems
               </span>
-              <h2 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.95]">
-                Core Offerings.
+              <h2 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight text-black">
+                Core Offerings
               </h2>
             </div>
-            <p className="text-lg text-neutral-700 max-w-md font-medium leading-relaxed">
-              Custom-engineered vertical transit configurations built for residential serenity, heavy corporate traffic, and specialized logistics.
+            <p className="text-sm sm:text-base text-neutral-900 max-w-md font-medium">
+              Three configurations engineered for private residences, commercial buildings, and industrial logistics.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
             
             {/* Category 1: Home Lifts */}
             <div className="flex flex-col justify-between group">
               <div>
-                <div className="relative h-72 md:h-80 w-full mb-8 overflow-hidden bg-neutral-900">
+                <div className="relative h-64 sm:h-72 w-full mb-5 overflow-hidden bg-neutral-900">
                   <Image 
-                    src="/luxury_elevator.jpg" 
-                    alt="Home Lifts" 
+                    src="/imgs/glass_fretwork_elevator.png" 
+                    alt="Globus Residential Glass Elevator with Decorative Fretwork" 
                     fill 
                     className="object-cover group-hover:scale-105 transition-transform duration-700" 
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
                 </div>
-                <span className="text-xs font-mono font-bold tracking-widest text-neutral-400 uppercase block mb-2">
-                  CATEGORY 01
-                </span>
-                <h4 className="text-3xl font-black tracking-tight mb-3">
+                <h3 className="text-xl sm:text-2xl font-bold tracking-tight mb-2 text-black">
                   Home Lifts
-                </h4>
-                <p className="text-neutral-700 text-base leading-relaxed font-medium mb-6">
-                  Space-efficient, quiet, and elegant hydraulic or traction lifts engineered for custom residential layouts.
+                </h3>
+                <p className="text-neutral-900 text-sm leading-relaxed mb-4 font-medium">
+                  Hydraulic and traction zero-pit lifts with panoramic glass, hardwood, or decorative jaali panels.
                 </p>
+                <div className="space-y-1 text-xs font-mono font-bold text-neutral-800 mb-6">
+                  <p>2 to 5 Floors &bull; Up to 4 Passengers &bull; 215V</p>
+                </div>
               </div>
               <div>
                 <Link 
                   href="/products#residential" 
-                  className="inline-block border-b-2 border-black pb-1 text-xs font-black tracking-[0.2em] uppercase hover:opacity-60 transition-opacity"
+                  className="inline-block border-b-2 border-black pb-1 text-xs font-black tracking-wider uppercase hover:opacity-60 transition-opacity text-black"
                 >
-                  Explore Home Lifts &rarr;
+                  View Home Lifts &rarr;
                 </Link>
               </div>
             </div>
@@ -143,61 +155,59 @@ export default function Home() {
             {/* Category 2: Commercial Lifts */}
             <div className="flex flex-col justify-between group">
               <div>
-                <div className="relative h-72 md:h-80 w-full mb-8 overflow-hidden bg-neutral-900">
+                <div className="relative h-64 sm:h-72 w-full mb-5 overflow-hidden bg-neutral-900">
                   <Image 
-                    src="/commercial_elevator.jpg" 
-                    alt="Commercial Lifts" 
+                    src="/imgs/exterior_glass_elevator.png" 
+                    alt="Globus Commercial Modern Exterior Glass Elevator" 
                     fill 
                     className="object-cover group-hover:scale-105 transition-transform duration-700" 
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
                 </div>
-                <span className="text-xs font-mono font-bold tracking-widest text-neutral-400 uppercase block mb-2">
-                  CATEGORY 02
-                </span>
-                <h4 className="text-3xl font-black tracking-tight mb-3">
+                <h3 className="text-xl sm:text-2xl font-bold tracking-tight mb-2 text-black">
                   Commercial Lifts
-                </h4>
-                <p className="text-neutral-700 text-base leading-relaxed font-medium mb-6">
-                  Robust, heavy-duty elevator systems engineered for high-traffic environments like offices, retail spaces, and hotels.
+                </h3>
+                <p className="text-neutral-900 text-sm leading-relaxed mb-4 font-medium">
+                  MRL gearless passenger systems for corporate towers, hotels, and retail plazas.
                 </p>
+                <div className="space-y-1 text-xs font-mono font-bold text-neutral-800 mb-6">
+                  <p>8 to 26 Passengers &bull; Speeds to 2.5 m/s</p>
+                </div>
               </div>
               <div>
                 <Link 
                   href="/products#commercial" 
-                  className="inline-block border-b-2 border-black pb-1 text-xs font-black tracking-[0.2em] uppercase hover:opacity-60 transition-opacity"
+                  className="inline-block border-b-2 border-black pb-1 text-xs font-black tracking-wider uppercase hover:opacity-60 transition-opacity text-black"
                 >
-                  Commercial Blueprints &rarr;
+                  Commercial Specs &rarr;
                 </Link>
               </div>
             </div>
 
-            {/* Category 3: Specialized Solutions */}
+            {/* Category 3: Specialized & Industrial Systems (Actual Industrial Freight Image) */}
             <div className="flex flex-col justify-between group">
               <div>
-                <div className="relative h-72 md:h-80 w-full mb-8 overflow-hidden bg-neutral-900">
+                <div className="relative h-64 sm:h-72 w-full mb-5 overflow-hidden bg-neutral-900">
                   <Image 
                     src="/freight_elevator.jpg" 
-                    alt="Specialized Solutions" 
+                    alt="Globus Industrial Freight and Logistics Elevator" 
                     fill 
                     className="object-cover group-hover:scale-105 transition-transform duration-700" 
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
                 </div>
-                <span className="text-xs font-mono font-bold tracking-widest text-neutral-400 uppercase block mb-2">
-                  CATEGORY 03
-                </span>
-                <h4 className="text-3xl font-black tracking-tight mb-3">
-                  Specialized Solutions
-                </h4>
-                <p className="text-neutral-700 text-base leading-relaxed font-medium mb-6">
-                  Goods elevators, car parking lifts, and dumbwaiters built for specialized industrial, automotive, and commercial requirements.
+                <h3 className="text-xl sm:text-2xl font-bold tracking-tight mb-2 text-black">
+                  Specialized &amp; Industrial Systems
+                </h3>
+                <p className="text-neutral-900 text-sm leading-relaxed mb-4 font-medium">
+                  Heavy industrial goods elevators, hydraulic car parking stackers, and rugged freight hoists.
                 </p>
+                <div className="space-y-1 text-xs font-mono font-bold text-neutral-800 mb-6">
+                  <p>500 kg to 5,000 kg &bull; Automotive &amp; Freight Duty</p>
+                </div>
               </div>
               <div>
                 <Link 
                   href="/products#industrial" 
-                  className="inline-block border-b-2 border-black pb-1 text-xs font-black tracking-[0.2em] uppercase hover:opacity-60 transition-opacity"
+                  className="inline-block border-b-2 border-black pb-1 text-xs font-black tracking-wider uppercase hover:opacity-60 transition-opacity text-black"
                 >
                   Specialized Systems &rarr;
                 </Link>
@@ -208,130 +218,145 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 04 // Why Choose Globus Elevators (Dark Luxury Minimalist Metrics) */}
-      <section className="relative z-20 py-28 md:py-36 px-6 md:px-12 lg:px-24 bg-neutral-950 text-white border-t border-white/10">
+      {/* 04 // Visual Project Gallery */}
+      <section className="relative z-20 py-16 sm:py-24 md:py-32 px-5 sm:px-8 md:px-12 lg:px-24 bg-neutral-950 text-white border-t border-white/10">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row md:items-end justify-between border-b border-white/10 pb-12 mb-16 md:mb-24 gap-8">
+          <div className="flex flex-col md:flex-row md:items-end justify-between border-b border-white/10 pb-8 sm:pb-12 mb-10 sm:mb-14 gap-6">
             <div>
-              <span className="text-xs md:text-sm font-semibold tracking-[0.3em] text-white/50 uppercase block mb-3">
-                04 // Technical Superiority
+              <span className="text-xs font-mono uppercase tracking-widest text-white/50 block mb-2">
+                Recent Projects
               </span>
-              <h2 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.95]">
-                Why Choose Us.
+              <h2 className="text-3xl sm:text-5xl font-black tracking-tight">
+                Realized Installations
               </h2>
             </div>
-            <p className="text-base md:text-lg text-white/70 max-w-md font-medium leading-relaxed">
-              Engineered with extreme tolerances, low power footprints, and four redundant fail-safe systems.
+            <p className="text-xs sm:text-sm text-white/60 max-w-md font-medium">
+              Photography from recent residential and commercial installations across India.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             
-            <div className="border-t border-white/20 pt-8">
-              <span className="text-4xl font-black text-white/20 mb-4 block font-mono">01.</span>
-              <h4 className="text-xl md:text-2xl font-bold tracking-tight mb-3 text-white">
-                Compact &amp; Flexible Design
-              </h4>
-              <p className="text-sm md:text-base text-white/70 leading-relaxed font-medium">
-                Engineered to fit into minimal spaces with flexible structural requirements, eliminating costly civil pit excavation.
-              </p>
+            <div className="group overflow-hidden">
+              <div className="relative h-72 sm:h-80 w-full overflow-hidden bg-black">
+                <Image 
+                  src="/imgs/glass_wood_elevator.png" 
+                  alt="Modern Glass-and-Wood Exterior Elevator" 
+                  fill 
+                  className="object-cover group-hover:scale-105 transition-transform duration-700" 
+                />
+              </div>
+              <div className="pt-3">
+                <h4 className="text-sm font-bold text-white">Glass &amp; Timber Exterior Shaft</h4>
+                <p className="text-xs text-white/50 font-mono mt-0.5">Private Residence</p>
+              </div>
             </div>
 
-            <div className="border-t border-white/20 pt-8">
-              <span className="text-4xl font-black text-white/20 mb-4 block font-mono">02.</span>
-              <h4 className="text-xl md:text-2xl font-bold tracking-tight mb-3 text-white">
-                Advanced Safety Standards
-              </h4>
-              <p className="text-sm md:text-base text-white/70 leading-relaxed font-medium">
-                Equipped with emergency stops, door interlocks, perimeter safety sensors, and reliable home inverter auto-rescue.
-              </p>
+            <div className="group overflow-hidden">
+              <div className="relative h-72 sm:h-80 w-full overflow-hidden bg-black">
+                <Image 
+                  src="/imgs/globus_courtyard.png" 
+                  alt="Modern Globus Elevator Courtyard" 
+                  fill 
+                  className="object-cover group-hover:scale-105 transition-transform duration-700" 
+                />
+              </div>
+              <div className="pt-3">
+                <h4 className="text-sm font-bold text-white">Courtyard Panoramic Glass Tower</h4>
+                <p className="text-xs text-white/50 font-mono mt-0.5">Central Atrium</p>
+              </div>
             </div>
 
-            <div className="border-t border-white/20 pt-8">
-              <span className="text-4xl font-black text-white/20 mb-4 block font-mono">03.</span>
-              <h4 className="text-xl md:text-2xl font-bold tracking-tight mb-3 text-white">
-                Energy Efficient
-              </h4>
-              <p className="text-sm md:text-base text-white/70 leading-relaxed font-medium">
-                Built with modern low-consumption drives and smart controls to minimize power consumption on standard household electrical grids.
-              </p>
+            <div className="group overflow-hidden sm:col-span-2 lg:col-span-1">
+              <div className="relative h-72 sm:h-80 w-full overflow-hidden bg-black">
+                <Image 
+                  src="/imgs/outdoor_shaft_installation.png" 
+                  alt="Outdoor Steel Hoistway Shaft Installation" 
+                  fill 
+                  className="object-cover group-hover:scale-105 transition-transform duration-700" 
+                />
+              </div>
+              <div className="pt-3">
+                <h4 className="text-sm font-bold text-white">Outdoor Steel Shaft Framework</h4>
+                <p className="text-xs text-white/50 font-mono mt-0.5">Exterior Installation</p>
+              </div>
             </div>
 
-            <div className="border-t border-white/20 pt-8">
-              <span className="text-4xl font-black text-white/20 mb-4 block font-mono">04.</span>
-              <h4 className="text-xl md:text-2xl font-bold tracking-tight mb-3 text-white">
-                End-to-End Execution
-              </h4>
-              <p className="text-sm md:text-base text-white/70 leading-relaxed font-medium">
-                From initial site inspection and blueprint design to manufacturing, precision installation, and routine maintenance.
-              </p>
-            </div>
+          </div>
 
+          <div className="mt-10 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+            <span className="text-xs font-mono text-white/50">Residential &bull; Panoramic &bull; Commercial Installations</span>
+            <Link 
+              href="/gallery" 
+              className="text-xs font-bold tracking-widest uppercase text-white border-b border-white pb-1 hover:opacity-60 transition-opacity"
+            >
+              Explore Full Project Gallery &rarr;
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* 05 // The Seamless Journey (Vibrant White Architectural Section) */}
-      <section className="relative z-20 py-28 md:py-36 px-6 md:px-12 lg:px-24 bg-white text-black border-t border-black/10">
+      {/* 05 // How We Work (Restored with Original AI Images and high-contrast dark text on white) */}
+      <section className="relative z-20 py-20 sm:py-28 md:py-36 px-5 sm:px-8 md:px-12 lg:px-24 bg-white text-black border-t border-black/15">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row md:items-end justify-between border-b-2 border-black/10 pb-12 mb-16 md:mb-24 gap-8">
+          <div className="flex flex-col md:flex-row md:items-end justify-between border-b-2 border-black/15 pb-8 sm:pb-12 mb-14 sm:mb-20 gap-6">
             <div>
-              <span className="text-xs md:text-sm font-semibold tracking-[0.3em] text-neutral-500 uppercase block mb-3">
-                05 // The Process
+              <span className="text-xs font-mono uppercase tracking-widest text-black font-bold block mb-2">
+                Execution
               </span>
-              <h2 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.95]">
-                How We Work.
+              <h2 className="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight text-black">
+                How We Work
               </h2>
             </div>
-            <p className="text-lg text-neutral-700 max-w-md font-medium leading-relaxed">
+            <p className="text-base sm:text-lg text-neutral-900 max-w-md font-medium leading-relaxed">
               A transparent, white-glove process from your first architectural blueprint to final safety certification.
             </p>
           </div>
 
-          <div className="space-y-24 md:space-y-36">
+          <div className="space-y-20 sm:space-y-28 md:space-y-36">
             
             {/* Step 1 */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-20 items-center">
               <div className="order-2 md:order-1 flex flex-col justify-center">
-                <span className="text-7xl lg:text-9xl font-black text-neutral-200 mb-4 block leading-none">01.</span>
-                <h4 className="text-3xl md:text-4xl font-black tracking-tight mb-4">Site Survey &amp; Blueprint Review</h4>
-                <p className="text-lg text-neutral-700 leading-relaxed font-medium">
+                <span className="text-6xl sm:text-8xl lg:text-9xl font-black text-neutral-300 mb-2 sm:mb-4 block leading-none font-mono">01.</span>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight mb-4 text-black">Site Survey &amp; Blueprint Review</h3>
+                <p className="text-base sm:text-lg text-neutral-900 leading-relaxed font-medium">
                   We analyze your building blueprints and conduct an on-site structural assessment to tailor the exact hoistway, load, and aesthetic parameters.
                 </p>
               </div>
-              <div className="order-1 md:order-2 relative h-[360px] lg:h-[480px] w-full overflow-hidden bg-neutral-900 group">
-                <Image src="/journey_1.png" alt="Consultation" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
+              <div className="order-1 md:order-2 relative h-[300px] sm:h-[380px] lg:h-[460px] w-full overflow-hidden bg-neutral-900 group">
+                <Image src="/journey_1.png" alt="Consultation and Blueprint Review" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
               </div>
             </div>
 
             {/* Step 2 */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-center">
-              <div className="relative h-[360px] lg:h-[480px] w-full overflow-hidden bg-neutral-900 group">
-                <Image src="/journey_2.png" alt="Engineering" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-20 items-center">
+              <div className="relative h-[300px] sm:h-[380px] lg:h-[460px] w-full overflow-hidden bg-neutral-900 group">
+                <Image src="/journey_2.png" alt="Precision Manufacturing" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
               </div>
               <div className="flex flex-col justify-center">
-                <span className="text-7xl lg:text-9xl font-black text-neutral-200 mb-4 block leading-none">02.</span>
-                <h4 className="text-3xl md:text-4xl font-black tracking-tight mb-4">Precision Manufacturing</h4>
-                <p className="text-lg text-neutral-700 leading-relaxed font-medium">
+                <span className="text-6xl sm:text-8xl lg:text-9xl font-black text-neutral-300 mb-2 sm:mb-4 block leading-none font-mono">02.</span>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight mb-4 text-black">Precision Manufacturing</h3>
+                <p className="text-base sm:text-lg text-neutral-900 leading-relaxed font-medium">
                   Components enter our fabrication facility, forging structural steel cabins and precision German hydraulic valving built for lifetime durability.
                 </p>
               </div>
             </div>
 
             {/* Step 3 */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-20 items-center">
               <div className="order-2 md:order-1 flex flex-col justify-center">
-                <span className="text-7xl lg:text-9xl font-black text-neutral-200 mb-4 block leading-none">03.</span>
-                <h4 className="text-3xl md:text-4xl font-black tracking-tight mb-4">Clean Installation &amp; AMC</h4>
-                <p className="text-lg text-neutral-700 leading-relaxed font-medium">
+                <span className="text-6xl sm:text-8xl lg:text-9xl font-black text-neutral-300 mb-2 sm:mb-4 block leading-none font-mono">03.</span>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight mb-4 text-black">Clean Installation &amp; AMC</h3>
+                <p className="text-base sm:text-lg text-neutral-900 leading-relaxed font-medium">
                   Our certified technical team conducts clean, non-intrusive on-site installation, safety drop calibration, and ongoing annual maintenance care.
                 </p>
               </div>
-              <div className="order-1 md:order-2 relative h-[360px] lg:h-[480px] w-full overflow-hidden bg-neutral-900 group">
-                <Image src="/journey_3.png" alt="Installation" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
+              <div className="order-1 md:order-2 relative h-[300px] sm:h-[380px] lg:h-[460px] w-full overflow-hidden bg-neutral-900 group">
+                <Image src="/journey_3.png" alt="Clean Installation and AMC" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
               </div>
             </div>
 
@@ -339,42 +364,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 06 // Direct Next Steps & Contact Block */}
-      <section className="relative z-20 py-28 md:py-40 px-6 md:px-12 lg:px-24 bg-black text-white border-t border-white/10">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
-          <div className="max-w-2xl">
-            <span className="text-xs font-semibold tracking-[0.3em] text-white/50 uppercase mb-4 block">
-              06 // Project Execution
-            </span>
-            <h3 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tighter mb-8 leading-[1.05]">
-              Let&rsquo;s Elevate <br/>Your Space.
-            </h3>
-            <p className="text-lg md:text-xl text-white/70 font-medium leading-relaxed mb-8">
-              Schedule a complimentary site survey, structural assessment, or receive an architectural estimate from our engineering department.
-            </p>
-            <div className="space-y-2 text-sm font-mono text-white/70">
-              <p>Corporate: <a href="mailto:info@globuselevators.com" className="text-white underline hover:text-white/70 transition-colors">info@globuselevators.com</a></p>
-              <p>Direct Inquiries: <a href="tel:+919931334433" className="text-white underline hover:text-white/70 transition-colors">+91 99313 34433</a> / +91 90317 61990</p>
-              <p>Headquarters: A/151, Sector 69, Noida, Uttar Pradesh, India</p>
-            </div>
-          </div>
-
-          <div className="flex flex-col w-full md:w-auto gap-4 md:min-w-[260px]">
-            <Link 
-              href="/contact" 
-              className="w-full text-center px-10 py-5 bg-white text-black text-xs font-bold tracking-[0.2em] uppercase hover:bg-neutral-200 transition-colors"
-            >
-              Request Consultation
-            </Link>
-            <Link 
-              href="/products" 
-              className="w-full text-center px-10 py-5 bg-transparent border border-white/20 text-white text-xs font-bold tracking-[0.2em] uppercase hover:bg-white/10 transition-colors"
-            >
-              Full Specifications
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* 06 // Integrated Contact Section */}
+      <ContactSection />
     </main>
   );
 }

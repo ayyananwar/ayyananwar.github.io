@@ -134,52 +134,58 @@ export function HeroScrollytelling() {
           
           {/* Phase 1: Architectural Integration */}
           <motion.div style={{ opacity: t1, y: y1, display: display1 }} className="col-start-1 row-start-1 w-full max-w-xl pointer-events-none">
-            <span className="text-[10px] md:text-sm font-bold tracking-[0.3em] text-white/50 uppercase mb-4 block">01 // Architectural Integration</span>
+            <span className="text-xs font-mono uppercase tracking-widest text-white/50 mb-3 block">Architectural Integration</span>
             <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold tracking-tighter text-white mb-4 leading-tight">
-              A Home That <br className="hidden sm:block" />Flows Perfectly.
+              A Home That <br className="hidden sm:block" />Flows Naturally.
             </h2>
-            <p className="text-base md:text-xl text-white/80 font-medium leading-relaxed">
+            <p className="text-sm md:text-lg text-white/80 font-medium leading-relaxed">
               An elevator shouldn&apos;t disrupt your home&apos;s structural design. We engineer precision motion calibrated for your blueprints.
             </p>
           </motion.div>
 
           {/* Phase 2: The Solution */}
           <motion.div style={{ opacity: t2, y: y2, display: display2 }} className="col-start-1 row-start-1 w-full max-w-xl pointer-events-none">
-            <span className="text-[10px] md:text-sm font-bold tracking-[0.3em] text-white/50 uppercase mb-4 block">02 // The Engineering</span>
+            <span className="text-xs font-mono uppercase tracking-widest text-white/50 mb-3 block">Zero-Pit Engineering</span>
             <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold tracking-tighter text-white mb-4 leading-tight">
               Zero Pits. <br className="hidden sm:block" />Zero Hassle.
             </h2>
-            <p className="text-base md:text-xl text-white/80 font-medium leading-relaxed">
+            <p className="text-sm md:text-lg text-white/80 font-medium leading-relaxed">
               Our advanced home lifts do not require deep digging or a separate machine room, saving you messy construction work.
             </p>
           </motion.div>
 
           {/* Phase 3: The Experience */}
           <motion.div style={{ opacity: t3, y: y3, display: display3 }} className="col-start-1 row-start-1 w-full max-w-xl pointer-events-none">
-            <span className="text-[10px] md:text-sm font-bold tracking-[0.3em] text-white/50 uppercase mb-4 block">03 // The Experience</span>
+            <span className="text-xs font-mono uppercase tracking-widest text-white/50 mb-3 block">Acoustic Comfort</span>
             <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold tracking-tighter text-white mb-4 leading-tight">
-              Completely <br className="hidden sm:block" />Silent.
+              Whisper Quiet <br className="hidden sm:block" />Operation.
             </h2>
-            <p className="text-base md:text-xl text-white/80 font-medium leading-relaxed">
-              Powered by world-class German hydraulics. Every ride is incredibly smooth, bump-free, and perfectly quiet.
+            <p className="text-sm md:text-lg text-white/80 font-medium leading-relaxed">
+              Powered by high-grade hydraulics. Every ride is smooth, bump-free, and calibrated for quiet home environments.
             </p>
           </motion.div>
 
           {/* Phase 4: Final CTA */}
           <motion.div style={{ opacity: t4, y: y4, display: display4 }} className="col-start-1 row-start-1 w-full max-w-xl pointer-events-auto">
-            <span className="text-[10px] md:text-sm font-bold tracking-[0.3em] text-white/50 uppercase mb-4 block pointer-events-none">04 // The Promise</span>
-            <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-white mb-4 leading-tight pointer-events-none">
+            <span className="text-xs font-mono uppercase tracking-widest text-white/50 mb-3 block pointer-events-none">Safety Standards</span>
+            <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold tracking-tighter text-white mb-4 leading-tight pointer-events-none">
               Engineered <br className="hidden sm:block" />For Safety.
             </h2>
-            <p className="text-base md:text-xl text-white/80 font-medium mb-8 leading-relaxed pointer-events-none">
-              Your family&apos;s safety is our highest priority. 100% reliable, heavy-duty elevators built to last a lifetime.
+            <p className="text-sm md:text-lg text-white/80 font-medium mb-6 leading-relaxed pointer-events-none">
+              Equipped with four redundant mechanical and electrical fail-safe systems built for lifetime reliability.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 md:justify-start justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 md:justify-start justify-center">
               <Link 
                 href="/products"
-                className="inline-block bg-white text-black px-10 py-4 text-sm font-bold tracking-[0.2em] uppercase hover:bg-neutral-200 transition-colors text-center"
+                className="inline-block bg-white text-black px-7 py-3.5 text-xs font-bold tracking-[0.2em] uppercase hover:bg-neutral-200 transition-colors text-center"
               >
                 Explore Products
+              </Link>
+              <Link 
+                href="/contact"
+                className="inline-block border border-white/40 text-white px-7 py-3.5 text-xs font-bold tracking-[0.2em] uppercase hover:bg-white hover:text-black transition-colors text-center"
+              >
+                Consultation
               </Link>
             </div>
           </motion.div>

@@ -5,7 +5,7 @@ import { Preloader } from "@/components/layout/Preloader";
 import { Navbar } from "@/components/layout/Navbar";
 import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
 import { Footer } from "@/components/layout/Footer";
-import { FloatingConsultation } from "@/components/layout/FloatingConsultation";
+
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -33,7 +33,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         </div>
         
         <Footer />
-        <FloatingConsultation />
       </body>
     </html>
   );

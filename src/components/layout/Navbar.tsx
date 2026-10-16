@@ -43,8 +43,8 @@ export function Navbar() {
           <Link href="/products" className="hover:text-white transition-colors">
             Our Elevators
           </Link>
-          <Link href="/blogs" className="hover:text-white transition-colors">
-            Blogs
+          <Link href="/gallery" className="hover:text-white transition-colors">
+            Gallery
           </Link>
           <Link 
             href="/contact" 
@@ -102,11 +102,11 @@ export function Navbar() {
               Our Elevators
             </Link>
             <Link 
-              href="/blogs" 
+              href="/gallery" 
               onClick={() => setMobileMenuOpen(false)}
               className="text-2xl font-medium tracking-wide text-white hover:text-white/70 transition-colors"
             >
-              Blogs
+              Gallery
             </Link>
             <Link 
               href="/contact" 

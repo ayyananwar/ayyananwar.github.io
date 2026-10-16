@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Services & Maintenance | Globus Elevators",
@@ -10,111 +11,111 @@ export default function ServicesPage() {
   const lifecycleServices = [
     {
       id: "01",
-      category: "PRE-CONSTRUCTION & ARCHITECTURE",
-      title: "Site Visit & Custom Design",
-      description: "Personalized site inspections, structural assessments, and custom layout planning tailored to your building requirements. Our engineering specialists evaluate hoistway tolerances, electrical supply feeds, and architectural finish alignments before fabrication begins.",
+      category: "Planning",
+      title: "Site Survey & CAD Layouts",
+      description: "On-site dimension surveys, structural load assessments, and CAD hoistway planning tailored to your building blueprints. We evaluate shaft tolerances and electrical supply feeds before fabrication starts.",
       features: [
-        "Complimentary initial site dimension survey",
-        "Structural load & electrical requirements assessment",
-        "Custom CAD hoistway drawings & architectural blueprints",
-        "Zero-pit and low-headroom feasibility analysis"
+        "Site dimension verification",
+        "Structural load & electrical feed assessment",
+        "Custom CAD hoistway drawings & blueprints",
+        "Zero-pit and low-headroom feasibility study"
       ]
     },
     {
       id: "02",
-      category: "DEPLOYMENT & SAFETY VALIDATION",
-      title: "Installation & Commissioning",
-      description: "Meticulous installation handled by expert technical teams, ensuring alignment with safety codes and civil prerequisites. Every system undergoes mechanical rail alignment, safety gear drop testing, and control calibration before handover.",
+      category: "Installation",
+      title: "Precision Assembly & Commissioning",
+      description: "Handled by certified technicians adhering strictly to national lift safety codes. Every installation undergoes rail alignment, safety drop testing, and control calibration before handover.",
       features: [
-        "Certified mechanical & electrical installation technicians",
-        "Strict compliance with national lift safety codes",
-        "Comprehensive dynamic load testing & brake calibration",
-        "Full client handover with emergency operation training"
+        "Certified mechanical & electrical riggers",
+        "Full compliance with Indian lift safety standards",
+        "Dynamic load testing & brake calibration",
+        "Client handover with emergency release training"
       ]
     },
     {
       id: "03",
-      category: "EQUIPMENT LONGEVITY & PEACE OF MIND",
+      category: "Maintenance",
       title: "Annual Maintenance Contracts (AMC)",
-      description: "Affordable, scheduled maintenance packages covering mechanical checks, lubrication, control system diagnostics, and emergency support. Regular preventative care guarantees maximum uptime and extended machine lifespan.",
+      description: "Preventative maintenance packages covering mechanical inspections, lubrication, valve diagnostics, and 24/7 breakdown assistance across India.",
       features: [
-        "Scheduled monthly / quarterly mechanical inspections",
-        "Complete hydraulic fluid, valve, and rope tension diagnostics",
-        "Rapid-response emergency breakdown support",
-        "Original OEM spare parts replacement guarantee"
+        "Scheduled monthly / quarterly safety checks",
+        "Hydraulic fluid, valve, and rope diagnostics",
+        "24/7 emergency response dispatch desk",
+        "Genuine OEM spare parts replacement guarantee"
       ]
     },
     {
       id: "04",
-      category: "SYSTEM EVOLUTION & LIFE EXTENSION",
-      title: "Modernization & Upgrades",
-      description: "Revitalize older or slow elevator systems with modern control panels, enhanced safety features, and improved interior aesthetics. Save up to 50% energy consumption by retrofitting legacy motors with advanced VVVF variable drives.",
+      category: "Upgrades",
+      title: "Modernization & Controller Retrofits",
+      description: "Revitalize older or slow elevator systems with modern VVVF variable drives, microprocessor controllers, and upgraded interior finishes.",
       features: [
-        "Microprocessor controller & VVVF drive retrofits",
-        "Automatic Rescue Device (ARD) and backup integration",
-        "Cabin aesthetic revitalization (mirrored stainless, glass, lighting)",
-        "Safety interlock and multi-beam infrared sensor upgrades"
+        "VVVF drive retrofits cutting power consumption",
+        "Automatic Rescue Device (ARD) battery descent",
+        "Cabin aesthetic revitalization (mirrored stainless, glass)",
+        "Infrared multi-beam door sensor upgrades"
       ]
     }
   ];
 
   return (
-    <main className="bg-black text-white pt-32 pb-24 selection:bg-white selection:text-black min-h-screen">
+    <main className="bg-black text-white pt-28 sm:pt-36 pb-20 selection:bg-white selection:text-black min-h-screen">
       
       {/* Header */}
-      <section className="container mx-auto px-6 md:px-12 max-w-7xl mb-20 md:mb-28">
-        <header className="border-b border-white/10 pb-12">
-          <span className="text-xs md:text-sm font-semibold tracking-[0.3em] text-white/50 uppercase block mb-4">
-            Globus Elevators // Lifecycle Engineering
+      <section className="container mx-auto px-5 sm:px-8 md:px-12 max-w-7xl mb-14 sm:mb-20">
+        <header className="border-b border-white/10 pb-8 sm:pb-12">
+          <span className="text-xs font-mono uppercase tracking-widest text-white/50 block mb-3">
+            Lifecycle Engineering
           </span>
-          <h1 className="text-4xl md:text-6xl lg:text-8xl font-black tracking-tighter mb-6 leading-[1.05]">
-            End-to-End <br />
-            <span className="text-white/40">Execution.</span>
+          <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-black tracking-tight mb-4">
+            End-to-End Execution
           </h1>
-          <p className="text-lg md:text-xl text-white/70 max-w-3xl font-medium leading-relaxed">
-            Our engagement doesn&rsquo;t end at installation. We provide comprehensive lifecycle engineering: from initial hoistway surveys to lifetime preventive maintenance.
+          <p className="text-xs sm:text-sm md:text-base text-white/70 max-w-2xl font-medium leading-relaxed">
+            From initial hoistway dimensions to ongoing preventative AMC, our engineering department oversees the entire lifecycle of your elevator system.
           </p>
         </header>
       </section>
 
-      {/* Phase 01: Pre-Construction & Deployment (Vibrant White Section) */}
-      <section className="py-28 md:py-36 px-6 md:px-12 border-t border-black/10 bg-white text-black">
+      {/* Phase 01: Pre-Construction & Deployment */}
+      <section className="py-16 sm:py-24 md:py-32 px-5 sm:px-8 md:px-12 border-t border-black/10 bg-white text-black">
         <div className="container mx-auto max-w-7xl">
-          <div className="border-b border-black/10 pb-8 mb-16">
-            <span className="text-xs font-mono font-bold tracking-widest text-neutral-500 uppercase block mb-2">
-              PHASE 01 // PRE-CONSTRUCTION &amp; COMMISSIONING
+          <div className="border-b border-black/15 pb-6 sm:pb-8 mb-10 sm:mb-14">
+            <span className="text-xs font-mono tracking-widest text-black font-bold uppercase block mb-1">
+              Phase 01
             </span>
-            <h2 className="text-3xl md:text-6xl font-black tracking-tight text-black">
-              Site Survey &amp; Precision Build.
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-black tracking-tight text-black">
+              Site Survey &amp; Precision Build
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
             {lifecycleServices.slice(0, 2).map((service) => (
               <div key={service.id} className="flex flex-col justify-between">
                 <div>
-                  <span className="text-5xl lg:text-7xl font-black text-neutral-200 block mb-4 leading-none">
-                    {service.id}.
-                  </span>
-                  <span className="text-xs font-mono font-bold tracking-widest text-black uppercase block mb-2">
-                    {service.category}
-                  </span>
-                  <h3 className="text-2xl md:text-4xl font-black tracking-tight mb-4 text-black">
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="text-2xl sm:text-3xl font-black font-mono text-neutral-400">
+                      {service.id}
+                    </span>
+                    <span className="text-xs font-mono uppercase tracking-wider text-black font-bold">
+                      {service.category}
+                    </span>
+                  </div>
+                  
+                  <h3 className="text-xl sm:text-2xl font-bold tracking-tight mb-2 text-black">
                     {service.title}
                   </h3>
-                  <p className="text-base md:text-lg text-neutral-700 font-medium leading-relaxed mb-8">
+                  <p className="text-sm text-neutral-900 font-medium leading-relaxed mb-6">
                     {service.description}
                   </p>
                 </div>
 
-                <div className="border-t border-black/15 pt-6">
-                  <h4 className="text-xs font-bold tracking-[0.2em] uppercase text-neutral-500 mb-4">
-                    Key Scope &amp; Deliverables
-                  </h4>
-                  <ul className="space-y-3">
+                <div className="border-t border-black/15 pt-4">
+                  <span className="text-xs font-mono uppercase text-black font-bold block mb-2">Scope &amp; Deliverables</span>
+                  <ul className="space-y-1.5">
                     {service.features.map((feat, idx) => (
-                      <li key={idx} className="flex items-start text-sm text-neutral-800 font-medium">
-                        <span className="text-neutral-400 font-bold mr-3 font-mono">0{idx + 1}</span>
+                      <li key={idx} className="flex items-start text-xs sm:text-sm text-neutral-900 font-medium">
+                        <span className="text-black mr-2 font-mono">&bull;</span>
                         {feat}
                       </li>
                     ))}
@@ -126,44 +127,66 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Phase 02: Longevity, AMC & Modernization (Dark Obsidian Section) */}
-      <section className="py-28 md:py-36 px-6 md:px-12 border-t border-white/10 bg-black text-white">
-        <div className="container mx-auto max-w-7xl">
-          <div className="border-b border-white/10 pb-8 mb-16">
-            <span className="text-xs font-mono font-bold tracking-widest text-white/50 uppercase block mb-2">
-              PHASE 02 // LIFETIME RELIABILITY &amp; RETROFITS
+      {/* Visual Interlude: Technician Platform Safety Deployment */}
+      <section className="relative h-[260px] sm:h-[360px] w-full overflow-hidden bg-neutral-900 border-t border-b border-white/10">
+        <Image 
+          src="/imgs/worker_platform.png" 
+          alt="Globus Elevator Certified Installation Platform" 
+          fill 
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-black/50 pointer-events-none" />
+        <div className="absolute inset-0 flex items-center justify-center p-6 text-center">
+          <div className="max-w-xl text-white">
+            <span className="text-xs font-mono uppercase text-white/70 block mb-2">
+              Certified Safety Riggers
             </span>
-            <h2 className="text-3xl md:text-6xl font-black tracking-tight text-white">
-              Preventative AMC &amp; Modernization.
+            <p className="text-lg sm:text-2xl font-bold tracking-tight">
+              Every Hoistway Inspected, Calibrated, and Drop-Tested On-Site.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Phase 02: Longevity, AMC & Modernization */}
+      <section className="py-16 sm:py-24 md:py-32 px-5 sm:px-8 md:px-12 border-t border-white/10 bg-black text-white">
+        <div className="container mx-auto max-w-7xl">
+          <div className="border-b border-white/10 pb-6 sm:pb-8 mb-10 sm:mb-14">
+            <span className="text-xs font-mono tracking-widest text-white/50 uppercase block mb-1">
+              Phase 02
+            </span>
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-black tracking-tight text-white">
+              Preventative AMC &amp; Modernization
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
             {lifecycleServices.slice(2, 4).map((service) => (
               <div key={service.id} className="flex flex-col justify-between">
                 <div>
-                  <span className="text-5xl lg:text-7xl font-black text-neutral-800 block mb-4 leading-none">
-                    {service.id}.
-                  </span>
-                  <span className="text-xs font-mono font-bold tracking-widest text-white/50 uppercase block mb-2">
-                    {service.category}
-                  </span>
-                  <h3 className="text-2xl md:text-4xl font-black tracking-tight mb-4 text-white">
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="text-2xl sm:text-3xl font-black font-mono text-white/30">
+                      {service.id}
+                    </span>
+                    <span className="text-xs font-mono uppercase tracking-wider text-white/50">
+                      {service.category}
+                    </span>
+                  </div>
+
+                  <h3 className="text-xl sm:text-2xl font-bold tracking-tight mb-2 text-white">
                     {service.title}
                   </h3>
-                  <p className="text-base md:text-lg text-white/75 font-medium leading-relaxed mb-8">
+                  <p className="text-xs sm:text-sm text-white/70 leading-relaxed mb-6">
                     {service.description}
                   </p>
                 </div>
 
-                <div className="border-t border-white/15 pt-6">
-                  <h4 className="text-xs font-bold tracking-[0.2em] uppercase text-white/40 mb-4">
-                    Key Scope &amp; Deliverables
-                  </h4>
-                  <ul className="space-y-3">
+                <div className="border-t border-white/15 pt-4">
+                  <span className="text-xs font-mono uppercase text-white/50 block mb-2">Deliverables</span>
+                  <ul className="space-y-1.5">
                     {service.features.map((feat, idx) => (
-                      <li key={idx} className="flex items-start text-sm text-white/80 font-medium">
-                        <span className="text-white/40 font-bold mr-3 font-mono">0{idx + 1}</span>
+                      <li key={idx} className="flex items-start text-xs sm:text-sm text-white/70">
+                        <span className="text-white/40 mr-2 font-mono">&bull;</span>
                         {feat}
                       </li>
                     ))}
@@ -175,27 +198,24 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Phase 03: Direct Consultation Banner (Vibrant White Section) */}
-      <section className="py-24 md:py-32 px-6 md:px-12 border-t border-black/10 bg-white text-black">
-        <div className="container mx-auto max-w-7xl flex flex-col md:flex-row md:items-center justify-between gap-8">
-          <div>
-            <span className="text-xs font-mono font-bold tracking-[0.25em] text-neutral-500 uppercase block mb-2">
-              MAINTENANCE &amp; SURVEYS
+      {/* Direct Contact CTA */}
+      <section className="border-t border-white/10 bg-black">
+        <Link 
+          href="/contact" 
+          className="group block px-5 sm:px-8 md:px-12 py-16 sm:py-20 hover:bg-white hover:text-black transition-colors duration-500"
+        >
+          <div className="container mx-auto max-w-7xl flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+            <div>
+              <span className="text-xs font-mono uppercase block mb-1 opacity-50">Direct Consultation</span>
+              <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight">
+                Schedule a Site Survey or AMC Review
+              </h2>
+            </div>
+            <span className="text-xs font-bold tracking-widest uppercase flex items-center">
+              Contact Engineering &rarr;
             </span>
-            <h3 className="text-3xl md:text-5xl font-black tracking-tight mb-3 text-black">
-              Book a Site Survey or Request AMC Quotation
-            </h3>
-            <p className="text-base text-neutral-700 font-medium max-w-xl">
-              Connect directly with our engineering office in Noida or request on-site technical inspection anywhere in our coverage region.
-            </p>
           </div>
-          <Link
-            href="/contact"
-            className="px-10 py-5 bg-black text-white text-xs font-bold tracking-[0.2em] uppercase hover:bg-neutral-800 transition-colors shrink-0 text-center"
-          >
-            Contact Engineering Team &rarr;
-          </Link>
-        </div>
+        </Link>
       </section>
 
     </main>
