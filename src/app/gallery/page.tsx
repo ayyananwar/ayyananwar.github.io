@@ -19,6 +19,83 @@ interface GalleryItem {
 
 const GALLERY_ITEMS: GalleryItem[] = [
   {
+    id: "ge360-atrium",
+    title: "GE 360 Villa Atrium Centerpiece",
+    subtitle: "Double-Height Luxury Residence Installation",
+    category: "Panoramic",
+    categoryLabel: "Panoramic & Glass",
+    location: "Private Villa",
+    image: "/new/360_3.jpeg",
+    description: "Full 360-degree cylindrical panoramic glass cabin rising through a double-height residential atrium. Engineered with zero civil pit excavation and freestanding structural framework.",
+    specs: ["360° Viewing Angle", "Double-Height Atrium Rise", "Zero-Pit Civil Base", "Single-Phase 215V Power"]
+  },
+  {
+    id: "hydraulic-cantilever",
+    title: "Cantilevered Hydraulic Home Lift",
+    subtitle: "Exterior Hoistway Architecture",
+    category: "Residential",
+    categoryLabel: "Residential Lift",
+    location: "Residential Complex",
+    image: "/new/hydro.jpeg",
+    description: "Weather-sealed cantilevered hydraulic lift engineered for structures without an interior hoistway. Heavy-duty vertical guide rails provide smooth acceleration and silent landings.",
+    specs: ["Cantilever Guide Structure", "German Hydraulic Valving", "Zero Machine Room (MRL)", "Weather-Sealed Cab"]
+  },
+  {
+    id: "ge360-interior",
+    title: "GE 360 Cabin Interior Architecture",
+    subtitle: "Indirect Ambient LED Illumination",
+    category: "Residential",
+    categoryLabel: "Residential Lift",
+    location: "Luxury Duplex",
+    image: "/new/360.webp",
+    description: "Interior cabin detail showcasing black anodized structural steel framing, flush-fit laminated safety glass, and soft perimeter LED edge illumination for evening transit.",
+    specs: ["Black Anodized Frame", "Ambient LED Lighting", "Dual Door Interlocks", "Emergency Inverter Rescue"]
+  },
+  {
+    id: "ge360-facade",
+    title: "GE 360 Panoramic Glass Shaft",
+    subtitle: "Continuous Uninterrupted Sightlines",
+    category: "Panoramic",
+    categoryLabel: "Panoramic & Glass",
+    location: "Contemporary Villa",
+    image: "/new/360_4.jpeg",
+    description: "Frontal perspective of the cylindrical glass hoistway showing crystal-clear vertical sightlines that preserve natural light flow across all interior floors.",
+    specs: ["Toughened Laminated Glass", "Minimal Floor Penetration", "Whisper-Quiet Valving", "Mechanical Rail Brake"]
+  },
+  {
+    id: "ge360-piston",
+    title: "Outdoor Glass Shaft & Hydraulic Piston",
+    subtitle: "Vertical Hydro-Electric Drive Architecture",
+    category: "Panoramic",
+    categoryLabel: "Panoramic & Glass",
+    location: "Exterior Hoistway",
+    image: "/new/360_1.webp",
+    description: "Panoramic glass tower with exposed vertical hydraulic drive cylinder, combining contemporary industrial engineering with natural daylight transit.",
+    specs: ["Direct Hydraulic Cylinder", "Weatherproof Glass Hoistway", "Overload Sensing Cells", "Low Power Consumption"]
+  },
+  {
+    id: "ge360-curved",
+    title: "GE 360 Curved Glass Villa Tower",
+    subtitle: "Integrated Stairwell Void",
+    category: "Panoramic",
+    categoryLabel: "Panoramic & Glass",
+    location: "Atrium Residence",
+    image: "/new/360_2.webp",
+    description: "Cylindrical curved glass elevator shaft installed inside an internal garden atrium, transmitting natural illumination throughout the vertical circulation core.",
+    specs: ["Curved Panoramic Glass", "Zero Rooftop Overrun", "Single-Phase Operation", "Automatic Landing Release"]
+  },
+  {
+    id: "hydraulic-cargo",
+    title: "External Hydraulic Utility & Home Hoist",
+    subtitle: "Rugged Residential Integration",
+    category: "Engineering",
+    categoryLabel: "Engineering & Assembly",
+    location: "Exterior Retrofit Site",
+    image: "/new/hydro2.webp",
+    description: "Direct hydraulic lift configuration providing vertical transit between multi-tier residential parking and outdoor terraces without internal renovations.",
+    specs: ["Direct Piston Drive", "Exterior Weather-Proofing", "Instant Auto-Rescue", "Low Maintenance AMC"]
+  },
+  {
     id: "geometric-villa",
     title: "Geometric Villa Integration",
     subtitle: "Custom Multi-Level Facade Alignment",
@@ -41,19 +118,8 @@ const GALLERY_ITEMS: GalleryItem[] = [
     specs: ["Custom Jaali Panels", "Whisper-Quiet Valving", "3 Landings (G+2)", "Italian Marble Floor"]
   },
   {
-    id: "ge360-panoramic",
-    title: "GE 360 Panoramic Circular Lift",
-    subtitle: "Flagship Residential Centerpiece",
-    category: "Panoramic",
-    categoryLabel: "Panoramic & Glass",
-    location: "Private Residence",
-    image: "/luxury_elevator.jpg",
-    description: "360-degree cylindrical panoramic glass cabin engineered for open-space stairwell voids. Operates without masonry shaft walls, flooding interior stairwells with uninterrupted natural sunlight.",
-    specs: ["360° Viewing Angle", "Curved Toughened Glass", "UPS Inverter Auto-Rescue", "Zero Machine Room (MRL)"]
-  },
-  {
     id: "exterior-glass",
-    title: "Contemporary Glass Tower",
+    title: "Contemporary Commercial Glass Tower",
     subtitle: "High-Traffic Passenger Transit",
     category: "Commercial",
     categoryLabel: "Commercial Infrastructure",
@@ -70,7 +136,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     categoryLabel: "Residential Lift",
     location: "Bespoke Villa",
     image: "/imgs/glass_wood_elevator.png",
-    description: "A seamless pairing of warm natural exterior wood cladding with crystal-clear panoramic glass walls, calibrated to complement the residence's architectural landscape.",
+    description: "A combination of natural exterior wood cladding with crystal-clear panoramic glass walls, calibrated to complement the residence's architectural landscape.",
     specs: ["Custom Wood Cladding", "Zero-Pit Civil Base", "Anti-Skid Flooring", "Low Power Footprint"]
   },
   {
@@ -97,7 +163,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: "technician-platform",
-    title: "Certified Field Deployment & Drop Calibration",
+    title: "Field Deployment & Drop Calibration",
     subtitle: "100% Code-Compliant Mechanical Testing",
     category: "Engineering",
     categoryLabel: "Engineering & Assembly",

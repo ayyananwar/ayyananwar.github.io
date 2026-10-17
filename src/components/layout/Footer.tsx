@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -6,8 +7,16 @@ export function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 mb-12 sm:mb-16">
         
         <div className="lg:col-span-2 flex flex-col items-start">
-          <Link href="/" className="text-2xl sm:text-3xl md:text-4xl font-black tracking-tighter mb-3 text-white">
-            GLOBUS
+          <Link href="/" className="flex items-center gap-3 mb-3 text-2xl sm:text-3xl md:text-4xl font-black tracking-tighter text-white hover:text-white/80 transition-colors group">
+            <div className="relative w-8 h-8 sm:w-9 sm:h-9 flex-shrink-0">
+              <Image 
+                src="/logo_site-icon.png" 
+                alt="Globus Elevators Emblem" 
+                fill 
+                className="object-contain"
+              />
+            </div>
+            <span>GLOBUS</span>
           </Link>
           <p className="text-white/70 max-w-sm text-xs sm:text-sm md:text-base leading-relaxed font-medium">
             High-tolerance vertical transportation engineering. Built for structural safety, architectural integration, and whisper-quiet operation.

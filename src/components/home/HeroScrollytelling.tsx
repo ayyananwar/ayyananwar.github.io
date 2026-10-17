@@ -118,60 +118,58 @@ export function HeroScrollytelling() {
       <div className="sticky top-0 left-0 w-full h-screen overflow-hidden flex items-center">
         <canvas 
           ref={canvasRef} 
-          className="absolute inset-0 w-full h-full object-cover opacity-60"
+          className="absolute inset-0 w-full h-full object-cover opacity-70 md:opacity-60 transition-opacity"
         />
         
-        {/* Mobile gradient overlay (Full coverage for center text legibility) */}
-        <div className="absolute inset-0 bg-black/60 md:hidden pointer-events-none" />
+        {/* Mobile overlay: Moody cinematic aesthetic like before, but balanced for low-brightness visibility */}
+        <div className="absolute inset-0 bg-black/45 md:hidden pointer-events-none" />
         
         {/* Desktop gradient overlay (Right) */}
         <div className="absolute inset-y-0 right-0 w-full md:w-3/4 lg:w-2/3 bg-gradient-to-l from-black via-black/95 to-transparent hidden md:block pointer-events-none" />
-        
-        <div className="absolute inset-0 bg-black/20 pointer-events-none" />
 
         {/* Narrative Container: Center aligned on mobile, Right aligned on desktop */}
         <div className="relative z-10 container mx-auto px-6 md:px-12 grid place-items-center content-center md:place-items-end h-full text-center md:text-left">
           
           {/* Phase 1: Architectural Integration */}
           <motion.div style={{ opacity: t1, y: y1, display: display1 }} className="col-start-1 row-start-1 w-full max-w-xl pointer-events-none">
-            <span className="text-xs font-mono uppercase tracking-widest text-white/50 mb-3 block">Architectural Integration</span>
-            <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold tracking-tighter text-white mb-4 leading-tight">
+            <span className="text-xs font-mono uppercase tracking-widest text-white/70 mb-3 block drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">Architectural Integration</span>
+            <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold tracking-tighter text-white mb-4 leading-tight drop-shadow-[0_4px_16px_rgba(0,0,0,1)]">
               A Home That <br className="hidden sm:block" />Flows Naturally.
             </h2>
-            <p className="text-sm md:text-lg text-white/80 font-medium leading-relaxed">
+            <p className="text-sm md:text-lg text-white/90 font-medium leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.95)]">
               An elevator shouldn&apos;t disrupt your home&apos;s structural design. We engineer precision motion calibrated for your blueprints.
             </p>
           </motion.div>
 
           {/* Phase 2: The Solution */}
           <motion.div style={{ opacity: t2, y: y2, display: display2 }} className="col-start-1 row-start-1 w-full max-w-xl pointer-events-none">
-            <span className="text-xs font-mono uppercase tracking-widest text-white/50 mb-3 block">Zero-Pit Engineering</span>
-            <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold tracking-tighter text-white mb-4 leading-tight">
+            <span className="text-xs font-mono uppercase tracking-widest text-white/70 mb-3 block drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">Zero-Pit Engineering</span>
+            <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold tracking-tighter text-white mb-4 leading-tight drop-shadow-[0_4px_16px_rgba(0,0,0,1)]">
               Zero Pits. <br className="hidden sm:block" />Zero Hassle.
             </h2>
-            <p className="text-sm md:text-lg text-white/80 font-medium leading-relaxed">
+            <p className="text-sm md:text-lg text-white/90 font-medium leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.95)]">
               Our advanced home lifts do not require deep digging or a separate machine room, saving you messy construction work.
             </p>
           </motion.div>
 
           {/* Phase 3: The Experience */}
           <motion.div style={{ opacity: t3, y: y3, display: display3 }} className="col-start-1 row-start-1 w-full max-w-xl pointer-events-none">
-            <span className="text-xs font-mono uppercase tracking-widest text-white/50 mb-3 block">Acoustic Comfort</span>
-            <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold tracking-tighter text-white mb-4 leading-tight">
+            <span className="text-xs font-mono uppercase tracking-widest text-white/70 mb-3 block drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">Acoustic Comfort</span>
+            <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold tracking-tighter text-white mb-4 leading-tight drop-shadow-[0_4px_16px_rgba(0,0,0,1)]">
               Whisper Quiet <br className="hidden sm:block" />Operation.
             </h2>
-            <p className="text-sm md:text-lg text-white/80 font-medium leading-relaxed">
+            <p className="text-sm md:text-lg text-white/90 font-medium leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.95)]">
               Powered by high-grade hydraulics. Every ride is smooth, bump-free, and calibrated for quiet home environments.
             </p>
           </motion.div>
 
           {/* Phase 4: Final CTA */}
           <motion.div style={{ opacity: t4, y: y4, display: display4 }} className="col-start-1 row-start-1 w-full max-w-xl pointer-events-auto">
-            <span className="text-xs font-mono uppercase tracking-widest text-white/50 mb-3 block pointer-events-none">Safety Standards</span>
-            <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold tracking-tighter text-white mb-4 leading-tight pointer-events-none">
+            <span className="text-xs font-mono uppercase tracking-widest text-white/70 mb-3 block pointer-events-none drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">Safety Standards</span>
+            <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold tracking-tighter text-white mb-4 leading-tight pointer-events-none drop-shadow-[0_4px_16px_rgba(0,0,0,1)]">
               Engineered <br className="hidden sm:block" />For Safety.
             </h2>
-            <p className="text-sm md:text-lg text-white/80 font-medium mb-6 leading-relaxed pointer-events-none">
+            <p className="text-sm md:text-lg text-white/90 font-medium mb-6 leading-relaxed pointer-events-none drop-shadow-[0_2px_10px_rgba(0,0,0,0.95)]">
               Equipped with four redundant mechanical and electrical fail-safe systems built for lifetime reliability.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 md:justify-start justify-center">

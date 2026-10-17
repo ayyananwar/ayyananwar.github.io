@@ -4,8 +4,44 @@ import Image from "next/image";
 import { useState } from "react";
 import { BrochureDownloadModal } from "@/components/products/BrochureDownloadModal";
 
+const GE360_ANGLES = [
+  {
+    src: "/new/360_3.jpeg",
+    title: "Atrium Centerpiece",
+    subtitle: "Double-Height Luxury Villa Installation",
+    tag: "Angle 01 &bull; Atrium"
+  },
+  {
+    src: "/new/360_4.jpeg",
+    title: "Panoramic Glass Hoistway",
+    subtitle: "Continuous Uninterrupted Sightlines",
+    tag: "Angle 02 &bull; Shaft"
+  },
+  {
+    src: "/new/360.webp",
+    title: "Cabin Interior & Ambient Illumination",
+    subtitle: "Black Anodized Frame & Soft Lighting",
+    tag: "Angle 03 &bull; Interior"
+  },
+  {
+    src: "/new/360_1.webp",
+    title: "Outdoor Glass Shaft & Hydraulic Piston",
+    subtitle: "Vertical Hydro-Electric Drive",
+    tag: "Angle 04 &bull; Hoistway"
+  },
+  {
+    src: "/new/360_2.webp",
+    title: "Curved Glass Tower",
+    subtitle: "Integrated Natural Stairwell Void",
+    tag: "Angle 05 &bull; Curved"
+  },
+];
+
 export function GE360Showcase() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [activeAngleIndex, setActiveAngleIndex] = useState(0);
+
+  const activeAngle = GE360_ANGLES[activeAngleIndex];
 
   const safetyFeatures = [
     {
@@ -35,8 +71,8 @@ export function GE360Showcase() {
       <BrochureDownloadModal 
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        pdfUrl="/Globus_GE360_Magazine.pdf"
-        pdfTitle="GE 360 Hydroelectric Series (Panoramic Home Lift)"
+        pdfUrl="/Globus_GE360_A4_4Page_Magazine.pdf"
+        pdfTitle="GE 360 Hydroelectric Series (Official 4-Page A4 Magazine)"
       />
 
       <div className="max-w-7xl mx-auto">
@@ -67,7 +103,7 @@ export function GE360Showcase() {
         </div>
 
         {/* Feature Visual Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center mb-16 sm:mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start mb-16 sm:mb-20">
           <div className="lg:col-span-5 space-y-8">
             <div>
               <span className="text-xs font-mono text-white/40 block mb-1">Architecture</span>
@@ -101,21 +137,54 @@ export function GE360Showcase() {
             </div>
           </div>
 
-          <div className="lg:col-span-7 relative h-[360px] sm:h-[460px] md:h-[540px] w-full overflow-hidden bg-black group">
-            <Image 
-              src="/luxury_elevator.jpg" 
-              alt="Globus GE 360 Panoramic Glass Elevator" 
-              fill 
-              className="object-cover group-hover:scale-105 transition-transform duration-700"
-              priority
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent pointer-events-none" />
+          <div className="lg:col-span-7 flex flex-col">
+            {/* Main Interactive Stage */}
+            <div className="relative h-[340px] sm:h-[440px] md:h-[500px] w-full overflow-hidden bg-black group border border-white/15">
+              <Image 
+                key={activeAngle.src}
+                src={activeAngle.src} 
+                alt={`Globus GE 360 - ${activeAngle.title}`} 
+                fill 
+                className="object-cover group-hover:scale-105 transition-transform duration-700"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
 
-            <div className="absolute bottom-6 left-6 right-6 flex items-end justify-between border-t border-white/20 pt-3 text-white">
-              <div>
-                <p className="text-sm sm:text-base font-bold">Panoramic Circular Glass Tower</p>
-                <span className="text-[10px] font-mono text-white/60">GE 360 &bull; Residential Villa Installation</span>
+              <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between border-t border-white/20 pt-3 text-white">
+                <div>
+                  <p className="text-sm sm:text-base font-bold">{activeAngle.title}</p>
+                  <span className="text-[10px] font-mono text-white/60">{activeAngle.subtitle}</span>
+                </div>
+                <span className="text-[10px] font-mono uppercase px-2 py-0.5 border border-white/30 text-white/70 hidden sm:inline-block">
+                  Photo {activeAngleIndex + 1} / {GE360_ANGLES.length}
+                </span>
               </div>
+            </div>
+
+            {/* Thumbnail Selector Strip */}
+            <div className="mt-3 grid grid-cols-5 gap-2">
+              {GE360_ANGLES.map((angle, idx) => {
+                const isActive = idx === activeAngleIndex;
+                return (
+                  <button
+                    key={angle.src}
+                    onClick={() => setActiveAngleIndex(idx)}
+                    className={`relative h-14 sm:h-18 md:h-20 w-full overflow-hidden border transition-all ${
+                      isActive 
+                        ? "border-white ring-1 ring-white" 
+                        : "border-white/20 opacity-60 hover:opacity-100"
+                    }`}
+                    aria-label={`View ${angle.title}`}
+                  >
+                    <Image 
+                      src={angle.src} 
+                      alt={angle.title} 
+                      fill 
+                      className="object-cover" 
+                    />
+                  </button>
+                );
+              })}
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, useScroll, useMotionValueEvent, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
@@ -26,8 +27,17 @@ export function Navbar() {
       }`}
     >
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
-        <Link href="/" className="text-xl font-black tracking-tighter text-white hover:text-white/80 transition-colors">
-          GLOBUS
+        <Link href="/" className="flex items-center gap-2.5 text-xl font-black tracking-tighter text-white hover:text-white/80 transition-colors group">
+          <div className="relative w-7 h-7 flex-shrink-0">
+            <Image 
+              src="/logo_site-icon.png" 
+              alt="Globus Elevators Emblem" 
+              fill 
+              className="object-contain"
+              priority
+            />
+          </div>
+          <span>GLOBUS</span>
         </Link>
 
         <div className="hidden md:flex items-center space-x-8 text-xs font-bold tracking-[0.15em] uppercase text-white/80">

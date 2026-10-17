@@ -157,8 +157,8 @@ export default function Home() {
               <div>
                 <div className="relative h-64 sm:h-72 w-full mb-5 overflow-hidden bg-neutral-900">
                   <Image 
-                    src="/imgs/exterior_glass_elevator.png" 
-                    alt="Globus Commercial Modern Exterior Glass Elevator" 
+                    src="/commercial_elevator.jpg" 
+                    alt="Globus Commercial Modern Elevator" 
                     fill 
                     className="object-cover group-hover:scale-105 transition-transform duration-700" 
                   />
@@ -238,47 +238,47 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             
             <div className="group overflow-hidden">
-              <div className="relative h-72 sm:h-80 w-full overflow-hidden bg-black">
+              <div className="relative h-72 sm:h-80 w-full overflow-hidden bg-black border border-white/10">
                 <Image 
-                  src="/imgs/glass_wood_elevator.png" 
-                  alt="Modern Glass-and-Wood Exterior Elevator" 
+                  src="/new/360_3.jpeg" 
+                  alt="Globus GE 360 Double-Height Villa Atrium Installation" 
                   fill 
                   className="object-cover group-hover:scale-105 transition-transform duration-700" 
                 />
               </div>
               <div className="pt-3">
-                <h4 className="text-sm font-bold text-white">Glass &amp; Timber Exterior Shaft</h4>
-                <p className="text-xs text-white/50 font-mono mt-0.5">Private Residence</p>
+                <h4 className="text-sm font-bold text-white">GE 360 Villa Atrium Centerpiece</h4>
+                <p className="text-xs text-white/50 font-mono mt-0.5">Double-Height Panoramic Glass Tower</p>
               </div>
             </div>
 
             <div className="group overflow-hidden">
-              <div className="relative h-72 sm:h-80 w-full overflow-hidden bg-black">
+              <div className="relative h-72 sm:h-80 w-full overflow-hidden bg-black border border-white/10">
                 <Image 
-                  src="/imgs/globus_courtyard.png" 
-                  alt="Modern Globus Elevator Courtyard" 
+                  src="/new/hydro.jpeg" 
+                  alt="Cantilevered Hydraulic Residential Elevator" 
                   fill 
                   className="object-cover group-hover:scale-105 transition-transform duration-700" 
                 />
               </div>
               <div className="pt-3">
-                <h4 className="text-sm font-bold text-white">Courtyard Panoramic Glass Tower</h4>
-                <p className="text-xs text-white/50 font-mono mt-0.5">Central Atrium</p>
+                <h4 className="text-sm font-bold text-white">Cantilevered Hydraulic Home Lift</h4>
+                <p className="text-xs text-white/50 font-mono mt-0.5">Exterior Weather-Proof Hoistway</p>
               </div>
             </div>
 
             <div className="group overflow-hidden sm:col-span-2 lg:col-span-1">
-              <div className="relative h-72 sm:h-80 w-full overflow-hidden bg-black">
+              <div className="relative h-72 sm:h-80 w-full overflow-hidden bg-black border border-white/10">
                 <Image 
-                  src="/imgs/outdoor_shaft_installation.png" 
-                  alt="Outdoor Steel Hoistway Shaft Installation" 
+                  src="/new/360.webp" 
+                  alt="Globus GE 360 Interior Cabin with Ambient Lighting" 
                   fill 
                   className="object-cover group-hover:scale-105 transition-transform duration-700" 
                 />
               </div>
               <div className="pt-3">
-                <h4 className="text-sm font-bold text-white">Outdoor Steel Shaft Framework</h4>
-                <p className="text-xs text-white/50 font-mono mt-0.5">Exterior Installation</p>
+                <h4 className="text-sm font-bold text-white">Architectural Cabin Interior</h4>
+                <p className="text-xs text-white/50 font-mono mt-0.5">Ambient LED &bull; Black Anodized Steel</p>
               </div>
             </div>
 

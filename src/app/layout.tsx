@@ -14,6 +14,14 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Globus Elevators | Elevating Standards, Enriching Spaces",
   description: "Premium vertical transportation solutions specialising in custom design, manufacturing, assembly, and maintenance for residential and commercial spaces.",
+  icons: {
+    icon: [
+      { url: "/logo_site-icon.png", type: "image/png" },
+      { url: "/favicon.ico", type: "image/x-icon" },
+    ],
+    shortcut: "/logo_site-icon.png",
+    apple: "/logo_site-icon.png",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

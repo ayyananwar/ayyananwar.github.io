@@ -64,14 +64,43 @@ export default function ProductsPage() {
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             
-            {/* Visual: Client Glass Fretwork Image */}
-            <div className="lg:col-span-6 relative h-[320px] sm:h-[420px] lg:h-[500px] w-full overflow-hidden bg-neutral-900 group">
-              <Image 
-                src="/imgs/glass_fretwork_elevator.png" 
-                alt="Globus Home Elevator Architecture with Decorative Fretwork" 
-                fill 
-                className="object-cover group-hover:scale-105 transition-transform duration-700"
-              />
+            {/* Visual: Real Hydraulic & Architectural Systems */}
+            <div className="lg:col-span-6 space-y-4">
+              <div className="relative h-[280px] sm:h-[360px] w-full overflow-hidden bg-neutral-900 group border border-black/10">
+                <Image 
+                  src="/new/hydro.jpeg" 
+                  alt="Globus Cantilevered Residential Hydraulic Elevator" 
+                  fill 
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute bottom-3 left-3 bg-black/80 px-2.5 py-1 text-[10px] font-mono text-white border border-white/20 uppercase tracking-wider">
+                  Exterior Cantilevered Hydraulic Lift
+                </div>
+              </div>
+              <div className="grid grid-cols-2 gap-3 sm:gap-4">
+                <div className="relative h-28 sm:h-36 w-full overflow-hidden bg-neutral-900 group border border-black/10">
+                  <Image 
+                    src="/imgs/glass_fretwork_elevator.png" 
+                    alt="Decorative Fretwork Enclosure" 
+                    fill 
+                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute bottom-2 left-2 bg-black/80 px-2 py-0.5 text-[9px] font-mono text-white/90">
+                    Laser-Cut Jaali
+                  </div>
+                </div>
+                <div className="relative h-28 sm:h-36 w-full overflow-hidden bg-neutral-900 group border border-black/10">
+                  <Image 
+                    src="/new/360.webp" 
+                    alt="Interior Cabin Ambient LED Lighting" 
+                    fill 
+                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute bottom-2 left-2 bg-black/80 px-2 py-0.5 text-[9px] font-mono text-white/90">
+                    Ambient LED Cab
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* Specifications */}
@@ -151,8 +180,8 @@ export default function ProductsPage() {
             {/* Visual: Client Exterior Glass Elevator */}
             <div className="lg:col-span-6 order-2 lg:order-1 relative h-[320px] sm:h-[420px] lg:h-[500px] w-full overflow-hidden bg-neutral-900 group">
               <Image 
-                src="/imgs/exterior_glass_elevator.png" 
-                alt="Commercial High-Speed Glass Elevator Installation" 
+                src="/commercial_elevator.jpg" 
+                alt="Commercial High-Speed Modern Elevator Installation" 
                 fill 
                 className="object-cover transition-all duration-700 group-hover:scale-105"
               />
